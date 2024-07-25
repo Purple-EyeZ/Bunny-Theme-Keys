@@ -1,0 +1,39 @@
+{
+	"semanticColors": [
+		{
+			"id": 1,
+			"title": "ANDROID_RIPPLE",
+			"images": [
+				"images/semantic1.png",
+				"images/semantic2.png"
+			],
+			"description": "Description ANDROID_RIPPLE."
+		},
+		{
+			"id": 2,
+			"title": "BACKGROUND_ACCENT",
+			"images": [
+				"images/semantic3.png"
+			],
+			"description": "Desc BACKGROUND_ACCENT."
+		}
+	],
+	"rawColors": [
+		{
+			"id": 2,
+			"title": "BLACK_500",
+			"images": [
+				"images/raw1.png"
+			],
+			"description": "Description BLACK_500."
+		},
+		{
+			"id": 3,
+			"title": "BRAND_360",
+			"images": [
+				"images/raw2.png"
+			],
+			"description": "Desc BRAND_360."
+		}
+	]
+}
