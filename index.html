@@ -33,8 +33,34 @@
             color: #e0e0e0;
         }
 
+        .category-buttons {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .category-button {
+            background-color: #1f2122;
+            border: none;
+            color: #ffffff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 0 5px;
+            transition: background-color 0.3s;
+        }
+
+        .category-button:hover {
+            background-color: #333;
+        }
+
         .category {
+            display: none; /* Hide all categories by default */
             margin-bottom: 40px;
+        }
+
+        .category.active {
+            display: block; /* Show active category */
         }
 
         .category h2 {
@@ -144,6 +170,11 @@
 
 <div class="search-container">
     <input type="text" id="search-bar" class="search-bar" placeholder="Search blocks by title or description...">
+</div>
+
+<div class="category-buttons">
+    <button class="category-button" onclick="showCategory('semantic-colors')">Semantic Colors</button>
+    <button class="category-button" onclick="showCategory('raw-colors')">RAW Colors</button>
 </div>
 
 <div class="category" id="semantic-colors">
@@ -285,6 +316,15 @@ function updateModalImages() {
     modalImages = Array.from(document.querySelectorAll('.images img')).map(img => img.src);
 }
 
+// Function to show the category based on the button clicked
+function showCategory(categoryId) {
+    const categories = document.querySelectorAll('.category');
+    categories.forEach(category => {
+        category.classList.remove('active');
+    });
+    document.getElementById(categoryId).classList.add('active');
+}
+
 // Add event listeners for modal controls
 document.querySelector('.close').addEventListener('click', closeModal);
 document.querySelector('.prev').addEventListener('click', showPrevImage);
@@ -296,7 +336,6 @@ let currentImageIndex = 0;
 
 // Call fetchData to load data and display blocks
 fetchData();
-
 </script>
 
 </body>
