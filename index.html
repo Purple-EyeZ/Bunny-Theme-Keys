@@ -77,61 +77,61 @@
         }
 
         /* Modal styles */
-        .modal {
-            display: none; /* Hidden by default */
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0, 0, 0, 0.8);
-            align-items: center;
-            justify-content: center;
-        }
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+}
 
-        .modal-content {
-            position: relative;
-            margin: auto;
-            padding: 20px;
-            max-width: 90%;
-            max-height: 90%;
-        }
+.modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    overflow: hidden;
+}
 
-        .modal-content img {
-            width: 100%;
-            height: auto;
-        }
+.modal-content img {
+    width: 100%;
+    height: auto;
+}
 
-        .close {
-            position: absolute;
-            top: 10px;
-            right: 25px;
-            color: #fff;
-            font-size: 35px;
-            font-weight: bold;
-            cursor: pointer;
-        }
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
 
-        .prev, .next {
-            position: absolute;
-            top: 50%;
-            color: #fff;
-            font-size: 40px;
-            font-weight: bold;
-            cursor: pointer;
-            padding: 16px;
-            user-select: none;
-        }
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 16px;
+    user-select: none;
+    z-index: 2;
+}
 
-        .prev {
-            left: 0;
-        }
+.prev {
+    left: 0;
+}
 
-        .next {
-            right: 0;
-        }
+.next {
+    right: 0;
+}
     </style>
 </head>
 <body>
@@ -249,7 +249,10 @@ function openModal(src) {
     const modalImage = document.getElementById('modalImage');
     modal.style.display = 'flex';
     modalImage.src = src;
-    currentImageIndex = Array.from(modalImages).indexOf(src);
+
+    // Update the index and modal images
+    updateModalImages();
+    currentImageIndex = modalImages.indexOf(src);
 }
 
 // Function to close the modal
@@ -259,14 +262,23 @@ function closeModal() {
 
 // Function to navigate to the previous image
 function showPrevImage() {
-    currentImageIndex = (currentImageIndex - 1 + modalImages.length) % modalImages.length;
-    document.getElementById('modalImage').src = modalImages[currentImageIndex];
+    if (modalImages.length > 0) {
+        currentImageIndex = (currentImageIndex - 1 + modalImages.length) % modalImages.length;
+        document.getElementById('modalImage').src = modalImages[currentImageIndex];
+    }
 }
 
 // Function to navigate to the next image
 function showNextImage() {
-    currentImageIndex = (currentImageIndex + 1) % modalImages.length;
-    document.getElementById('modalImage').src = modalImages[currentImageIndex];
+    if (modalImages.length > 0) {
+        currentImageIndex = (currentImageIndex + 1) % modalImages.length;
+        document.getElementById('modalImage').src = modalImages[currentImageIndex];
+    }
+}
+
+// Function to update the list of images for modal navigation
+function updateModalImages() {
+    modalImages = Array.from(document.querySelectorAll('.images img')).map(img => img.src);
 }
 
 // Add event listeners for modal controls
@@ -274,18 +286,13 @@ document.querySelector('.close').addEventListener('click', closeModal);
 document.querySelector('.prev').addEventListener('click', showPrevImage);
 document.querySelector('.next').addEventListener('click', showNextImage);
 
-// Array of all images in the modal
+// Initial setup
 let modalImages = [];
 let currentImageIndex = 0;
 
-function updateModalImages() {
-    modalImages = Array.from(document.querySelectorAll('.images img')).map(img => img.src);
-}
-
 // Call fetchData to load data and display blocks
 fetchData();
-window.addEventListener('resize', updateModalImages); // Update images when window is resized
-updateModalImages(); // Initial update of images
+
 </script>
 
 </body>
