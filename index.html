@@ -9,42 +9,41 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 20px;
-            background-color: #f0f0f0;
+            background-color: #181a1b;
+            color: #e0e0e0;
         }
         h1 {
             text-align: center;
+            color: #ffffff;
         }
         .category {
             margin-bottom: 40px;
         }
         .category h2 {
             margin-bottom: 10px;
-            color: #333;
+            color: #ffffff;
         }
         .bloc {
-            background-color: #fff;
+            background-color: #1f2122;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
             margin-bottom: 20px;
             padding: 20px;
         }
         .bloc h3 {
             margin-top: 0;
+            color: #e0e0e0;
         }
         .images img {
             max-width: 200px;
             margin-right: 10px;
             margin-bottom: 10px;
             border-radius: 4px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
         }
         .description {
             margin-top: 10px;
-            color: #555;
-        }
-        .color-code {
-            font-weight: bold;
-            color: #555;
+            color: #cfcfcf;
         }
     </style>
 </head>
@@ -66,12 +65,12 @@
 // Fetch JSON data
 async function fetchData() {
     try {
-        const response = await fetch('data.json');
+        const response = await fetch('data.json'); // Charge le fichier JSON
         const data = await response.json();
         renderBlocks(data.semanticColors, 'semantic-colors');
         renderBlocks(data.rawColors, 'raw-colors');
     } catch (error) {
-        console.error("Error while loading JSON data :", error);
+        console.error("Erreur lors du chargement des données JSON :", error);
     }
 }
 
@@ -85,11 +84,6 @@ function renderBlocks(blocks, containerId) {
         const titleElement = document.createElement('h3');
         titleElement.textContent = block.title;
         blockElement.appendChild(titleElement);
-
-        const colorCodeElement = document.createElement('p');
-        colorCodeElement.classList.add('color-code');
-        colorCodeElement.textContent = `Color Code: ${block.colorCode}`;
-        blockElement.appendChild(colorCodeElement);
 
         const imagesContainer = document.createElement('div');
         imagesContainer.classList.add('images');
