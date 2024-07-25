@@ -93,16 +93,18 @@
 
 .modal-content {
     position: relative;
-    max-width: 90%;
-    max-height: 90%;
+    width: 80%; /* Or another value based on your preference */
+    height: 80%; /* Or another value based on your preference */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .modal-content img {
     max-width: 100%;
     max-height: 100%;
-    display: block;
+    object-fit: contain; /* Keeps the entire image visible without distortion */
     margin: auto;
-    object-fit: contain; /* Ensures the entire image is visible */
 }
 
 .close {
