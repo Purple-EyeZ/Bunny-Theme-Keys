@@ -28,9 +28,17 @@
             padding: 10px;
             font-size: 16px;
             border-radius: 8px;
-            border: 1px solid #555;
+            border: 1px solid transparent;
             background-color: #1f2122;
             color: #e0e0e0;
+            transition: box-shadow 0.3s, border-color 0.3s;
+            box-shadow: 0 0 15px rgba(142, 45, 226, 0.5);
+        }
+
+        .search-bar:focus {
+            outline: none;
+            border-color: #8e2de2;
+            box-shadow: 0 0 25px rgba(142, 45, 226, 0.8), 0 0 50px rgba(142, 45, 226, 0.5);
         }
 
         .category-buttons {
@@ -39,7 +47,7 @@
         }
 
         .category-button {
-            background-color: #1f2122;
+            background-image: linear-gradient(to right, #4a00e0, #8e2de2); /* Dégradé de bleu à violet */
             border: none;
             color: #ffffff;
             padding: 10px 20px;
@@ -47,11 +55,13 @@
             border-radius: 8px;
             cursor: pointer;
             margin: 0 5px;
-            transition: background-color 0.3s;
+            transition: background-image 0.3s, transform 0.3s;
+            box-shadow: 0 4px 15px rgba(142, 45, 226, 0.5); /* Ombre douce */
         }
 
         .category-button:hover {
-            background-color: #333;
+            background-image: linear-gradient(to right, #8e2de2, #4a00e0); /* Inverse le dégradé lors du survol */
+            transform: scale(1.05); /* Légère mise en valeur */
         }
 
         .category {
