@@ -81,6 +81,12 @@
             color: #e0e0e0;
         }
 
+        .id {
+            font-size: 14px;
+            color: #a0a0a0;
+            margin-bottom: 10px;
+        }
+
         .images {
             display: flex;
             justify-content: center; /* Center images horizontally */
@@ -223,6 +229,12 @@ function renderBlocks(blocks, containerId) {
         blockElement.classList.add('bloc');
         blockElement.dataset.title = block.title.toLowerCase();
         blockElement.dataset.description = block.description.toLowerCase();
+
+        // Create and append the ID element
+        const idElement = document.createElement('p');
+        idElement.classList.add('id');
+        idElement.textContent = `ID: ${block.id}`;
+        blockElement.appendChild(idElement);
 
         const titleElement = document.createElement('h3');
         titleElement.textContent = block.title;
