@@ -36,6 +36,55 @@
 				"images/RAW-colors/id5.jpg"
 			],
 			"description": "Desc BRAND_360."
+		},
+		{
+			"id": 6,
+			"title": "BRAND_500",
+			"images": [
+				"images/RAW-colors/id_6.jpg",
+				"images/RAW-colors/id_6.1.jpg",
+				"images/RAW-colors/id_6.2.jpg"
+			],
+			"description": "Desc BRAND_500."
+		},
+		{
+			"id": 9,
+			"title": "PLUM_10",
+			"images": [
+				"images/RAW-colors/id_9.jpg",
+				"images/RAW-colors/id_9.1.jpg"
+			],
+			"description": "Desc PLUM_10."
+		},
+		{
+			"id": 10,
+			"title": "PLUM_16",
+			"images": [
+				"images/RAW-colors/id_10.jpg"
+			],
+			"description": "Desc PLUM_16."
+		},
+		{
+			"id": 11,
+			"title": "PLUM_17",
+			"images": [
+				"images/RAW-colors/id_11.jpg",
+				"images/RAW-colors/id_11.1.jpg",
+				"images/RAW-colors/id_11.2.jpg"
+			],
+			"description": "Desc PLUM_17."
+		},
+		{
+			"id": 12,
+			"title": "PLUM_20",
+			"images": [
+				"images/RAW-colors/id_12.jpg",
+				"images/RAW-colors/id_12.1.jpg",
+				"images/RAW-colors/id_12.2.jpg",
+				"images/RAW-colors/id_12.3.jpg",
+				"images/RAW-colors/id_12.4.jpg"
+			],
+			"description": "Desc PLUM_20."
 		}
 	]
 }
