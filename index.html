@@ -12,17 +12,36 @@
             background-color: #181a1b;
             color: #e0e0e0;
         }
+
         h1 {
             text-align: center;
             color: #ffffff;
         }
+
+        .search-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .search-bar {
+            width: 50%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 1px solid #555;
+            background-color: #1f2122;
+            color: #e0e0e0;
+        }
+
         .category {
             margin-bottom: 40px;
         }
+
         .category h2 {
             margin-bottom: 10px;
             color: #ffffff;
         }
+
         .bloc {
             background-color: #1f2122;
             border-radius: 8px;
@@ -30,17 +49,27 @@
             margin-bottom: 20px;
             padding: 20px;
         }
+
         .bloc h3 {
             margin-top: 0;
             color: #e0e0e0;
         }
+
+        .images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
         .images img {
             max-width: 200px;
-            margin-right: 10px;
-            margin-bottom: 10px;
+            max-height: 150px;
+            margin: 5px;
             border-radius: 4px;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
         }
+
         .description {
             margin-top: 10px;
             color: #cfcfcf;
@@ -50,6 +79,10 @@
 <body>
 
 <h1>Bunny Theme Keys</h1>
+
+<div class="search-container">
+    <input type="text" id="search-bar" class="search-bar" placeholder="Search something...">
+</div>
 
 <div class="category" id="semantic-colors">
     <h2>Semantic Colors</h2>
@@ -62,24 +95,28 @@
 </div>
 
 <script>
-// Fetch JSON data
+// Function to fetch JSON data
 async function fetchData() {
     try {
         const response = await fetch('data.json');
         const data = await response.json();
         renderBlocks(data.semanticColors, 'semantic-colors');
         renderBlocks(data.rawColors, 'raw-colors');
+        addSearchFunctionality();
     } catch (error) {
-        console.error("Error while loading JSON data :", error);
+        console.error("Error while loading JSON data:", error);
     }
 }
 
 // Function to display blocks in a specific category
 function renderBlocks(blocks, containerId) {
     const container = document.getElementById(containerId);
+    container.innerHTML = ''; // Clear container before rendering
     blocks.forEach(block => {
         const blockElement = document.createElement('div');
         blockElement.classList.add('bloc');
+        blockElement.dataset.title = block.title.toLowerCase(); // Add title in lowercase for search
+        blockElement.dataset.description = block.description.toLowerCase(); // Add description in lowercase for search
 
         const titleElement = document.createElement('h3');
         titleElement.textContent = block.title;
@@ -104,7 +141,30 @@ function renderBlocks(blocks, containerId) {
     });
 }
 
-// Call the fetchData function to load data and display blocks
+// Function to add search functionality
+function addSearchFunctionality() {
+    const searchBar = document.getElementById('search-bar');
+    searchBar.addEventListener('input', function() {
+        const query = searchBar.value.toLowerCase();
+        filterBlocks(query);
+    });
+}
+
+// Function to filter blocks based on search query
+function filterBlocks(query) {
+    const allBlocks = document.querySelectorAll('.bloc');
+    allBlocks.forEach(block => {
+        const title = block.dataset.title;
+        const description = block.dataset.description;
+        if (title.includes(query) || description.includes(query)) {
+            block.style.display = 'block';
+        } else {
+            block.style.display = 'none';
+        }
+    });
+}
+
+// Call fetchData to load data and display blocks
 fetchData();
 </script>
 
