@@ -89,14 +89,14 @@
 
         .images img {
             max-width: 200px; /* Set a maximum width for the images */
-            max-height: 150px; /* Set a maximum height if needed */
-            width: auto; /* Maintain aspect ratio */
+            max-height: 350px;
             height: auto; /* Maintain aspect ratio */
+            width: auto;
+            object-fit: contain;
             margin: 5px;
             border-radius: 4px;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
             cursor: pointer; /* Indicate that images are clickable */
-            border: 1px solid red; /* Debugging border to visualize image bounds */
         }
 
         .description {
@@ -121,8 +121,8 @@
 
         .modal-content {
             position: relative;
-            width: 80%; /* Or another value based on your preference */
-            height: 80%; /* Or another value based on your preference */
+            width: 85%; 
+            height: 85%; 
             display: flex;
             justify-content: center;
             align-items: center;
