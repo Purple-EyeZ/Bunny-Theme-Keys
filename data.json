@@ -4,7 +4,7 @@
 			"id": 1,
 			"title": "ANDROID_RIPPLE",
 			"images": [
-				"images/RAW-colors/Screenshot_20240508_202845.jpg"
+				"images/semantic.jpg"
 			],
 			"description": "Description ANDROID_RIPPLE."
 		},
@@ -30,10 +30,10 @@
 			"description": "Description BLACK_500."
 		},
 		{
-			"id": 3,
+			"id": 5,
 			"title": "BRAND_360",
 			"images": [
-				"images/raw2.png"
+				"images/RAW-colors/id5.jpg"
 			],
 			"description": "Desc BRAND_360."
 		}
