@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors from JSON</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            text-align: center;
+        }
+        .category {
+            margin-bottom: 40px;
+        }
+        .category h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .bloc {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        .bloc h3 {
+            margin-top: 0;
+        }
+        .images img {
+            max-width: 200px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        }
+        .description {
+            margin-top: 10px;
+            color: #555;
+        }
+        .color-code {
+            font-weight: bold;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Colors Display</h1>
+
+<div class="category" id="semantic-colors">
+    <h2>Semantic Colors</h2>
+    <!-- Semantic Colors Blocks -->
+</div>
+
+<div class="category" id="raw-colors">
+    <h2>Raw Colors</h2>
+    <!-- Raw Colors Blocks -->
+</div>
+
+<script>
+// Fetch JSON data
+async function fetchData() {
+    try {
+        const response = await fetch('data.json');
+        const data = await response.json();
+        renderBlocks(data.semanticColors, 'semantic-colors');
+        renderBlocks(data.rawColors, 'raw-colors');
+    } catch (error) {
+        console.error("Error while loading JSON data :", error);
+    }
+}
+
+// Function to display blocks in a specific category
+function renderBlocks(blocks, containerId) {
+    const container = document.getElementById(containerId);
+    blocks.forEach(block => {
+        const blockElement = document.createElement('div');
+        blockElement.classList.add('bloc');
+
+        const titleElement = document.createElement('h3');
+        titleElement.textContent = block.title;
+        blockElement.appendChild(titleElement);
+
+        const colorCodeElement = document.createElement('p');
+        colorCodeElement.classList.add('color-code');
+        colorCodeElement.textContent = `Color Code: ${block.colorCode}`;
+        blockElement.appendChild(colorCodeElement);
+
+        const imagesContainer = document.createElement('div');
+        imagesContainer.classList.add('images');
+        block.images.forEach(imageUrl => {
+            const imgElement = document.createElement('img');
+            imgElement.src = imageUrl;
+            imgElement.alt = block.title;
+            imagesContainer.appendChild(imgElement);
+        });
+        blockElement.appendChild(imagesContainer);
+
+        const descriptionElement = document.createElement('p');
+        descriptionElement.classList.add('description');
+        descriptionElement.textContent = block.description;
+        blockElement.appendChild(descriptionElement);
+
+        container.appendChild(blockElement);
+    });
+}
+
+// Call the fetchData function to load data and display blocks
+fetchData();
+</script>
+
+</body>
+</html>
