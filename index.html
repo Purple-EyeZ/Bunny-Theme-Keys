@@ -57,22 +57,80 @@
 
         .images {
             display: flex;
-            justify-content: center;
-            align-items: center;
+            justify-content: center; /* Center images */
+            align-items: center; /* Center vertically if only one image */
             flex-wrap: wrap;
         }
 
         .images img {
-            max-width: 200px;
+            max-width: 100%; /* Ensure images are responsive */
             max-height: 150px;
             margin: 5px;
             border-radius: 4px;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+            cursor: pointer; /* Indicate that images are clickable */
         }
 
         .description {
             margin-top: 10px;
             color: #cfcfcf;
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            position: relative;
+            margin: auto;
+            padding: 20px;
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .modal-content img {
+            width: 100%;
+            height: auto;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            color: #fff;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 16px;
+            user-select: none;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
         }
     </style>
 </head>
@@ -81,7 +139,7 @@
 <h1>Bunny Theme Keys</h1>
 
 <div class="search-container">
-    <input type="text" id="search-bar" class="search-bar" placeholder="Search something...">
+    <input type="text" id="search-bar" class="search-bar" placeholder="Search blocks by title or description...">
 </div>
 
 <div class="category" id="semantic-colors">
@@ -94,6 +152,16 @@
     <!-- Raw Colors Blocks -->
 </div>
 
+<!-- Modal for image enlargement -->
+<div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <span class="prev">&#10094;</span>
+    <span class="next">&#10095;</span>
+    <div class="modal-content">
+        <img id="modalImage" src="" alt="">
+    </div>
+</div>
+
 <script>
 // Function to fetch JSON data
 async function fetchData() {
@@ -103,6 +171,7 @@ async function fetchData() {
         renderBlocks(data.semanticColors, 'semantic-colors');
         renderBlocks(data.rawColors, 'raw-colors');
         addSearchFunctionality();
+        addImageClickEvents();
     } catch (error) {
         console.error("Error while loading JSON data:", error);
     }
@@ -115,8 +184,8 @@ function renderBlocks(blocks, containerId) {
     blocks.forEach(block => {
         const blockElement = document.createElement('div');
         blockElement.classList.add('bloc');
-        blockElement.dataset.title = block.title.toLowerCase(); // Add title in lowercase for search
-        blockElement.dataset.description = block.description.toLowerCase(); // Add description in lowercase for search
+        blockElement.dataset.title = block.title.toLowerCase();
+        blockElement.dataset.description = block.description.toLowerCase();
 
         const titleElement = document.createElement('h3');
         titleElement.textContent = block.title;
@@ -164,8 +233,59 @@ function filterBlocks(query) {
     });
 }
 
+// Function to add click events to images
+function addImageClickEvents() {
+    const images = document.querySelectorAll('.images img');
+    images.forEach(img => {
+        img.addEventListener('click', function() {
+            openModal(this.src);
+        });
+    });
+}
+
+// Function to open the modal with the clicked image
+function openModal(src) {
+    const modal = document.getElementById('imageModal');
+    const modalImage = document.getElementById('modalImage');
+    modal.style.display = 'flex';
+    modalImage.src = src;
+    currentImageIndex = Array.from(modalImages).indexOf(src);
+}
+
+// Function to close the modal
+function closeModal() {
+    document.getElementById('imageModal').style.display = 'none';
+}
+
+// Function to navigate to the previous image
+function showPrevImage() {
+    currentImageIndex = (currentImageIndex - 1 + modalImages.length) % modalImages.length;
+    document.getElementById('modalImage').src = modalImages[currentImageIndex];
+}
+
+// Function to navigate to the next image
+function showNextImage() {
+    currentImageIndex = (currentImageIndex + 1) % modalImages.length;
+    document.getElementById('modalImage').src = modalImages[currentImageIndex];
+}
+
+// Add event listeners for modal controls
+document.querySelector('.close').addEventListener('click', closeModal);
+document.querySelector('.prev').addEventListener('click', showPrevImage);
+document.querySelector('.next').addEventListener('click', showNextImage);
+
+// Array of all images in the modal
+let modalImages = [];
+let currentImageIndex = 0;
+
+function updateModalImages() {
+    modalImages = Array.from(document.querySelectorAll('.images img')).map(img => img.src);
+}
+
 // Call fetchData to load data and display blocks
 fetchData();
+window.addEventListener('resize', updateModalImages); // Update images when window is resized
+updateModalImages(); // Initial update of images
 </script>
 
 </body>
