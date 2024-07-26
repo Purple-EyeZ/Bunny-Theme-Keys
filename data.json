@@ -85,6 +85,99 @@
 				"images/RAW-colors/id_12.4.jpg"
 			],
 			"description": "Desc PLUM_20."
-		}
+		},
+		{
+			"id": 13,
+			"title": "PLUM_3",
+			"images": [
+				"images/RAW-colors/id_13.jpg",
+				"images/RAW-colors/id_13.1.jpg",
+				"images/RAW-colors/id_13.2.jpg"
+			],
+			"description": "Desc PLUM_3."
+		},
+		{
+			"id": 15,
+			"title": "PLUM_6",
+			"images": [
+				"images/RAW-colors/id_15.jpg",
+				"images/RAW-colors/id_15.1.jpg",
+				"images/RAW-colors/id_15.2.jpg",
+				"images/RAW-colors/id_15.3.jpg",
+				"images/RAW-colors/id_15.4.jpg"
+			],
+			"description": "Desc PLUM_6."
+		},
+		{
+			"id": 16,
+			"title": "PRIMARY_100",
+			"images": [
+				"images/RAW-colors/id_16.jpg"
+			],
+			"description": "Desc PRIMARY_100."
+		},
+		{
+			"id": 17,
+			"title": "PRIMARY_300",
+			"images": [
+				"images/RAW-colors/id_17.jpg",
+				"images/RAW-colors/id_17.jpg"
+			],
+			"description": "Desc PRIMARY_300."
+		},
+		{
+			"id": 23,
+			"title": "PRIMARY_600",
+			"images": [
+				"images/RAW-colors/id_23.jpg"
+			],
+			"description": "Desc PRIMARY_600."
+		},
+		{
+			"id": 26,
+			"title": "PRIMARY_660",
+			"images": [
+				"images/RAW-colors/id_26.jpg"
+			],
+			"description": "Desc PRIMARY_660."
+		},
+		{
+			"id": 73,
+			"title": "ROLE_DEFAULT",
+			"images": [
+				"images/RAW-colors/id_73.jpg"
+			],
+			"description": "Desc ROLE_DEFAULT."
+		},
+		{
+			"id": 95,
+			"title": "WHITE_500",
+			"images": [
+				"images/RAW-colors/id_95.jpg",
+				"images/RAW-colors/id_95.1.jpg",
+				"images/RAW-colors/id_95.2.gif",
+				"images/RAW-colors/id_95.3.gif"
+			],
+			"description": "Buttons / Hover."
+		},
+		{
+			"id": 98,
+			"title": "PLUM_11",
+			"images": [
+				"images/RAW-colors/id_98.jpg",
+				"images/RAW-colors/id_98.1.jpg",
+				"images/RAW-colors/id_98.2.jpg"
+			],
+			"description": "Desc PLUM_11."
+		},
+		{
+			"id": 102,
+			"title": "PLUM_24",
+			"images": [
+				"images/RAW-colors/id_102.jpg",
+				"images/RAW-colors/id_102.1.jpg"
+			],
+			"description": "Desc PLUM_24."
+		},
 	]
 }
