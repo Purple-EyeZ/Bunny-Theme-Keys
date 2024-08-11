@@ -1,183 +1,456 @@
 {
-	"semanticColors": [
-		{
-			"id": 1,
-			"title": "ANDROID_RIPPLE",
-			"images": [
-				"images/semantic.jpg"
-			],
-			"description": "Description ANDROID_RIPPLE."
-		},
-		{
-			"id": 2,
-			"title": "BACKGROUND_ACCENT",
-			"images": [
-				"images/semantic3.png"
-			],
-			"description": "Desc BACKGROUND_ACCENT."
-		}
-	],
-	"rawColors": [
-		{
-			"id": 2,
-			"title": "BLACK_500",
-			"images": [
-				"images/RAW-colors/Screenshot_20240508_202845.jpg",
-				"images/RAW-colors/Screenshot_20240508_202955.jpg",
-				"images/RAW-colors/Screenshot_20240508_203039.jpg",
-				"images/RAW-colors/Screenshot_20240508_203749.jpg"
-			],
-			"description": "Description BLACK_500."
-		},
-		{
-			"id": 5,
-			"title": "BRAND_360",
-			"images": [
-				"images/RAW-colors/id5.jpg"
-			],
-			"description": "Desc BRAND_360."
-		},
-		{
-			"id": 6,
-			"title": "BRAND_500",
-			"images": [
-				"images/RAW-colors/id_6.jpg",
-				"images/RAW-colors/id_6.1.jpg",
-				"images/RAW-colors/id_6.2.jpg"
-			],
-			"description": "Desc BRAND_500."
-		},
-		{
-			"id": 9,
-			"title": "PLUM_10",
-			"images": [
-				"images/RAW-colors/id_9.jpg",
-				"images/RAW-colors/id_9.1.jpg"
-			],
-			"description": "Desc PLUM_10."
-		},
-		{
-			"id": 10,
-			"title": "PLUM_16",
-			"images": [
-				"images/RAW-colors/id_10.jpg"
-			],
-			"description": "Desc PLUM_16."
-		},
-		{
-			"id": 11,
-			"title": "PLUM_17",
-			"images": [
-				"images/RAW-colors/id_11.jpg",
-				"images/RAW-colors/id_11.1.jpg",
-				"images/RAW-colors/id_11.2.jpg"
-			],
-			"description": "Desc PLUM_17."
-		},
-		{
-			"id": 12,
-			"title": "PLUM_20",
-			"images": [
-				"images/RAW-colors/id_12.jpg",
-				"images/RAW-colors/id_12.1.jpg",
-				"images/RAW-colors/id_12.2.jpg",
-				"images/RAW-colors/id_12.3.jpg",
-				"images/RAW-colors/id_12.4.jpg"
-			],
-			"description": "Desc PLUM_20."
-		},
-		{
-			"id": 13,
-			"title": "PLUM_3",
-			"images": [
-				"images/RAW-colors/id_13.jpg",
-				"images/RAW-colors/id_13.1.jpg",
-				"images/RAW-colors/id_13.2.jpg"
-			],
-			"description": "Desc PLUM_3."
-		},
-		{
-			"id": 15,
-			"title": "PLUM_6",
-			"images": [
-				"images/RAW-colors/id_15.jpg",
-				"images/RAW-colors/id_15.1.jpg",
-				"images/RAW-colors/id_15.2.jpg",
-				"images/RAW-colors/id_15.3.jpg",
-				"images/RAW-colors/id_15.4.jpg"
-			],
-			"description": "Desc PLUM_6."
-		},
-		{
-			"id": 16,
-			"title": "PRIMARY_100",
-			"images": [
-				"images/RAW-colors/id_16.jpg"
-			],
-			"description": "Desc PRIMARY_100."
-		},
-		{
-			"id": 17,
-			"title": "PRIMARY_300",
-			"images": [
-				"images/RAW-colors/id_17.jpg",
-				"images/RAW-colors/id_17.jpg"
-			],
-			"description": "Desc PRIMARY_300."
-		},
-		{
-			"id": 23,
-			"title": "PRIMARY_600",
-			"images": [
-				"images/RAW-colors/id_23.jpg"
-			],
-			"description": "Desc PRIMARY_600."
-		},
-		{
-			"id": 26,
-			"title": "PRIMARY_660",
-			"images": [
-				"images/RAW-colors/id_26.jpg"
-			],
-			"description": "Desc PRIMARY_660."
-		},
-		{
-			"id": 73,
-			"title": "ROLE_DEFAULT",
-			"images": [
-				"images/RAW-colors/id_73.jpg"
-			],
-			"description": "Desc ROLE_DEFAULT."
-		},
-		{
-			"id": 95,
-			"title": "WHITE_500",
-			"images": [
-				"images/RAW-colors/id_95.jpg",
-				"images/RAW-colors/id_95.1.jpg",
-				"images/RAW-colors/id_95.2.gif",
-				"images/RAW-colors/id_95.3.gif"
-			],
-			"description": "Buttons / Hover."
-		},
-		{
-			"id": 98,
-			"title": "PLUM_11",
-			"images": [
-				"images/RAW-colors/id_98.jpg",
-				"images/RAW-colors/id_98.1.jpg",
-				"images/RAW-colors/id_98.2.jpg"
-			],
-			"description": "Desc PLUM_11."
-		},
-		{
-			"id": 102,
-			"title": "PLUM_24",
-			"images": [
-				"images/RAW-colors/id_102.jpg",
-				"images/RAW-colors/id_102.1.jpg"
-			],
-			"description": "Desc PLUM_24."
-		}
-	]
+    "semanticColors": [
+        {
+            "id": 1,
+            "title": "ANDROID_RIPPLE",
+            "images": [
+                "images/Semantic-colors/id-1.gif"
+            ],
+            "description": "Button hover background."
+        },
+        {
+            "id": 2,
+            "title": "BACKGROUND_ACCENT",
+            "images": [
+                "images/Semantic-colors/id-2.jpg"
+            ],
+            "description": "Server activity icon."
+        },
+        {
+            "id": 5,
+            "title": "BACKGROUND_MOBILE_SECONDARY",
+            "images": [],
+            "description": "Appears very briefly while certain interface elements are loading (from what I've seen)."
+        },
+        {
+            "id": 6,
+            "title": "BACKGROUND_MODIFIER_ACCENT",
+            "images": [
+                "images/Semantic-colors/id-6.jpg",
+                "images/Semantic-colors/id-6.1.jpg"
+            ],
+            "description": "Channel selected, background folder open, bars at top and bottom of chat."
+        },
+        {
+            "id": 7,
+            "title": "BACKGROUND_MODIFIER_ACTIVE",
+            "images": [
+                "images/Semantic-colors/id-7.jpg"
+            ],
+            "description": "Server/category selected in emoji picker."
+        },
+        {
+            "id": 10,
+            "title": "BACKGROUND_PRIMARY",
+            "images": [
+                "images/Semantic-colors/id-10.jpg",
+                "images/Semantic-colors/id-10.1.jpg",
+                "images/Semantic-colors/id-10.2.jpg"
+            ],
+            "description": "Chat background, notifications tab background, messages tab header background."
+        },
+        {
+            "id": 11,
+            "title": "BACKGROUND_SECONDARY",
+            "images": [
+                "images/Semantic-colors/id-11.jpg"
+            ],
+            "description": "Background folder closed, the 2 buttons under the server list (Join server & Find group)."
+        },
+        {
+            "id": 12,
+            "title": "BACKGROUND_SECONDARY_ALT",
+            "images": [
+                "images/Semantic-colors/id-12.jpg"
+            ],
+            "description": "Background."
+        },
+        {
+            "id": 13,
+            "title": "BACKGROUND_TERTIARY",
+            "images": [
+                "images/Semantic-colors/id-13.jpg",
+                "images/Semantic-colors/id-13.1.jpg"
+            ],
+            "description": "Emoji picker line, background search filter."
+        },
+        {
+            "id": 14,
+            "title": "BG_BASE_PRIMARY",
+            "images": [
+                "images/Semantic-colors/id-14.jpg"
+            ],
+            "description": "Chat background."
+        },
+        {
+            "id": 15,
+            "title": "BG_BACKDROP",
+            "images": [
+                "images/Semantic-colors/id-15.jpg"
+            ],
+            "description": "Background when a contextual menu is open."
+        },
+        {
+            "id": 16,
+            "title": "BG_BASE_SECONDARY",
+            "images": [
+                "images/Semantic-colors/id-16.jpg"
+            ],
+            "description": "Application settings background."
+        },
+        {
+            "id": 17,
+            "title": "CARD_SECONDARY_BG",
+            "images": [
+                "images/Semantic-colors/id-17.jpg",
+                "images/Semantic-colors/id-17.1.jpg"
+            ],
+            "description": "Secondary card background."
+        },
+        {
+            "id": 18,
+            "title": "CARD_PRIMARY_BG",
+            "images": [
+                "images/Semantic-colors/id-18.jpg",
+                "images/Semantic-colors/id-18.1.jpg"
+            ],
+            "description": "Primary card background (Contextual menu, settings)."
+        },
+        {
+            "id": 19,
+            "title": "CHANNEL_ICON",
+            "images": [
+                "images/Semantic-colors/id-19.jpg"
+            ],
+            "description": "Icons of channels already read (Muted)."
+        },
+        {
+            "id": 21,
+            "title": "HEADER_SECONDARY",
+            "images": [
+                "images/Semantic-colors/id-21.jpg"
+            ],
+            "description": "Header text, texts in settings."
+        },
+        {
+            "id": 22,
+            "title": "BG_BASE_SECONDARY",
+            "images": [
+                "images/Semantic-colors/id-22.jpg"
+            ],
+            "description": "Secondary texts in settings."
+        },
+        {
+            "id": 23,
+            "title": "INTERACTIVE_ACTIVE",
+            "images": [
+                "images/Semantic-colors/id-23.jpg"
+            ],
+            "description": "Unread channel icons, unread server, selected tab."
+        },
+        {
+            "id": 26,
+            "title": "INTERACTIVE_NORMAL",
+            "images": [
+                "images/Semantic-colors/id-26.jpg",
+                "images/Semantic-colors/id-26.1.jpg"
+            ],
+            "description": "Unselected tabs / back arrow, search icon, emoji button in chat / 'is typing' text."
+        },
+        {
+            "id": 29,
+            "title": "REDESIGN_BUTTON_SECONDARY_BACKGROUND",
+            "images": [
+                "images/Semantic-colors/id-29.jpg"
+            ],
+            "description": "Background buttons secondary."
+        },
+        {
+            "id": 30,
+            "title": "REDESIGN_BUTTON_SECONDARY_BORDER",
+            "images": [
+                "images/Semantic-colors/id-30.jpg"
+            ],
+            "description": "Border buttons secondary."
+        },
+        {
+            "id": 31,
+            "title": "REDESIGN_CHANNEL_CATEGORY_NAME_TEXT",
+            "images": [
+                "images/Semantic-colors/id-31.jpg"
+            ],
+            "description": "Channel category name."
+        },
+        {
+            "id": 32,
+            "title": "REDESIGN_CHANNEL_NAME_TEXT",
+            "images": [
+                "images/Semantic-colors/id-32.jpg"
+            ],
+            "description": "Unread channel text."
+        },
+        {
+            "id": 37,
+            "title": "TEXT_DANGER",
+            "images": [
+                "images/Semantic-colors/id-37.jpg"
+            ],
+            "description": "Delete button text and icon."
+        },
+        {
+            "id": 39,
+            "title": "TEXT_MUTED",
+            "images": [
+                "images/Semantic-colors/id-39.jpg",
+                "images/Semantic-colors/id-39.1.jpg"
+            ],
+            "description": "Timestamp, secondary text."
+        },
+        {
+            "id": 40,
+            "title": "TEXT_NORMAL",
+            "images": [
+                "images/Semantic-colors/id-40.jpg",
+                "images/Semantic-colors/id-40.1.jpg"
+            ],
+            "description": "Text in user profile."
+        },
+        {
+            "id": 41,
+            "title": "TEXT_PRIMARY",
+            "images": [
+                "images/Semantic-colors/id-41.jpg"
+            ],
+            "description": "Chat text."
+        },
+        {
+            "id": 42,
+            "title": "TEXT_SECONDARY",
+            "images": [
+                "images/Semantic-colors/id-42.jpg"
+            ],
+            "description": "Secondary / minor text."
+        },
+        {
+            "id": 44,
+            "title": "REDESIGN_CHAT_INPUT_BACKGROUND",
+            "images": [
+                "images/Semantic-colors/id-44.jpg"
+            ],
+            "description": "Chat input background."
+        },
+        {
+            "id": 46,
+            "title": "CHAT_SWIPE_TO_REPLY_BACKGROUND",
+            "images": [
+                "images/Semantic-colors/id-46.jpg"
+            ],
+            "description": "Swipe to reply background."
+        },
+        {
+            "id": 49,
+            "title": "EMBED_BACKGROUND",
+            "images": [
+                "images/Semantic-colors/id-48-49.jpg"
+            ],
+            "description": "Embed background."
+        },
+        {
+            "id": 56,
+            "title": "REDESIGN_INPUT_CONTROL_SELECTED",
+            "images": [
+                "images/Semantic-colors/id-56.jpg"
+            ],
+            "description": "Color of toggle buttons ."
+        },
+        {
+            "id": 61,
+            "title": "EXPRESSION_PICKER_BG",
+            "images": [
+                "images/Semantic-colors/id-61.jpg"
+            ],
+            "description": "Emoji picker background."
+        },
+        {
+            "id": 63,
+            "title": "PANEL_BG",
+            "images": [
+                "images/Semantic-colors/id-63.jpg"
+            ],
+            "description": "Channel list background."
+        },
+        {
+            "id": 64,
+            "title": "ANDROID_NAVIGATION_SCRIM_BACKGROUND",
+            "images": [],
+            "description": "Android navigation bar."
+        },
+        {
+            "id": 97,
+            "title": "BG_BRAND",
+            "images": [],
+            "description": "See BRAND_500 Screenshots (Send button + 'dot' on the home button)."
+        }
+    ],
+    "rawColors": [
+        {
+            "id": 2,
+            "title": "BLACK_500",
+            "images": [
+                "images/RAW-colors/Screenshot_20240508_202845.jpg",
+                "images/RAW-colors/Screenshot_20240508_202955.jpg",
+                "images/RAW-colors/Screenshot_20240508_203749.jpg"
+            ],
+            "description": "Transparent background when a contextual menu is open / Nitro & settings button."
+        },
+        {
+            "id": 5,
+            "title": "BRAND_360",
+            "images": [
+                "images/RAW-colors/id5.jpg"
+            ],
+            "description": "Reply background / reply mention toggle."
+        },
+        {
+            "id": 6,
+            "title": "BRAND_500",
+            "images": [
+                "images/RAW-colors/id_6.jpg",
+                "images/RAW-colors/id_6.1.jpg",
+                "images/RAW-colors/id_6.2.jpg"
+            ],
+            "description": "Button colors / 'edit profile' & 'Add status' background, home button accent."
+        },
+        {
+            "id": 9,
+            "title": "PLUM_10",
+            "images": [
+                "images/RAW-colors/id_9.jpg",
+                "images/RAW-colors/id_9.1.jpg"
+            ],
+            "description": "Icon & text channels unread / timestamp / secondary text."
+        },
+        {
+            "id": 10,
+            "title": "PLUM_16",
+            "images": [
+                "images/RAW-colors/id_10.jpg"
+            ],
+            "description": " Button 'Emoji/GIFs/Stickers' / line emoji picker."
+        },
+        {
+            "id": 11,
+            "title": "PLUM_17",
+            "images": [
+                "images/RAW-colors/id_11.jpg",
+                "images/RAW-colors/id_11.1.jpg",
+                "images/RAW-colors/id_11.2.jpg"
+            ],
+            "description": "Background bottom bar, background context server menu."
+        },
+        {
+            "id": 12,
+            "title": "PLUM_20",
+            "images": [
+                "images/RAW-colors/id_12.jpg",
+                "images/RAW-colors/id_12.1.jpg",
+                "images/RAW-colors/id_12.2.jpg",
+                "images/RAW-colors/id_12.3.jpg",
+                "images/RAW-colors/id_12.4.jpg"
+            ],
+            "description": "Pretty much all the main background."
+        },
+        {
+            "id": 13,
+            "title": "PLUM_3",
+            "images": [
+                "images/RAW-colors/id_13.jpg",
+                "images/RAW-colors/id_13.1.jpg",
+                "images/RAW-colors/id_13.2.jpg"
+            ],
+            "description": "Header text, unread channel text."
+        },
+        {
+            "id": 15,
+            "title": "PLUM_6",
+            "images": [
+                "images/RAW-colors/id_15.jpg",
+                "images/RAW-colors/id_15.1.jpg",
+                "images/RAW-colors/id_15.2.jpg",
+                "images/RAW-colors/id_15.3.jpg",
+                "images/RAW-colors/id_15.4.jpg"
+            ],
+            "description": "Icon color, chat text, unselected tabs."
+        },
+        {
+            "id": 16,
+            "title": "PRIMARY_100",
+            "images": [
+                "images/RAW-colors/id_16.jpg"
+            ],
+            "description": "!!! WRONG/OUTDATED !!! I'll have to check later."
+        },
+        {
+            "id": 17,
+            "title": "PRIMARY_300",
+            "images": [
+                "images/RAW-colors/id_17.jpg"
+            ],
+            "description": "Icon emoji in the context menu, and maybe other things?."
+        },
+        {
+            "id": 23,
+            "title": "PRIMARY_600",
+            "images": [
+                "images/RAW-colors/id_23.jpg"
+            ],
+            "description": "Links embed background."
+        },
+        {
+            "id": 26,
+            "title": "PRIMARY_660",
+            "images": [
+                "images/RAW-colors/id_26.jpg"
+            ],
+            "description": "Bottom bar emoji picker."
+        },
+        {
+            "id": 73,
+            "title": "ROLE_DEFAULT",
+            "images": [
+                "images/RAW-colors/id_73.jpg"
+            ],
+            "description": "Spoiler button."
+        },
+        {
+            "id": 95,
+            "title": "WHITE_500",
+            "images": [
+                "images/RAW-colors/id_95.jpg",
+                "images/RAW-colors/id_95.1.jpg",
+                "images/RAW-colors/id_95.2.gif",
+                "images/RAW-colors/id_95.3.gif"
+            ],
+            "description": "Buttons / Hover."
+        },
+        {
+            "id": 98,
+            "title": "PLUM_11",
+            "images": [
+                "images/RAW-colors/id_98.jpg",
+                "images/RAW-colors/id_98.1.jpg",
+                "images/RAW-colors/id_98.2.jpg"
+            ],
+            "description": "Channel selected, context menu button, line, chat input background (Transparent)."
+        },
+        {
+            "id": 102,
+            "title": "PLUM_24",
+            "images": [
+                "images/RAW-colors/id_102.jpg",
+                "images/RAW-colors/id_102.1.jpg"
+            ],
+            "description": "Search bar, Android navbar, background emoji picker buttons."
+        }
+    ]
 }
