@@ -195,35 +195,50 @@ function toggleBlock(blockElement, button) {
     button.appendChild(document.createTextNode(blockElement.classList.contains('expanded') ? ' Less' : ' More'));
 }
 
+let isFixedSearchFocused = false;
+let previousScrollY = window.scrollY || window.pageYOffset;
+
+// Detects whether the user has clicked on the fixed search bar
+const fixedSearchBar = document.getElementById('fixedSearchBar');
+if (fixedSearchBar) {
+    fixedSearchBar.addEventListener('focus', () => {
+        isFixedSearchFocused = true;
+    });
+
+    fixedSearchBar.addEventListener('blur', () => {
+        isFixedSearchFocused = false;
+    });
+}
+
 // Function to control display of fixed banner during scrolling
 function handleScroll() {
-    const fixedBanner = document.getElementById('fixedBanner');
-    const searchBar = document.getElementById('search-bar');
-    const fixedSearchBar = document.getElementById('fixedSearchBar');
+    const fixedBanner = document.querySelector('.fixed-banner');
     const scrollThreshold = 100; // Fixed value
     const scrollY = window.scrollY || window.pageYOffset;
+
+    // Check if the user is scrolling up or down
+    const scrollingDown = scrollY > previousScrollY;
+    previousScrollY = scrollY;
 
     if (scrollY > scrollThreshold && !fixedBanner.classList.contains('show')) {
         fixedBanner.style.display = 'flex';
         setTimeout(() => {
             fixedBanner.classList.add('show');
-            if (fixedSearchBar && fixedSearchBar.value.length > 0) {
-                fixedSearchBar.focus();
-            }
+            fixedBanner.classList.remove('hide');
         }, 10);
-    } else if (scrollY <= scrollThreshold && fixedBanner.classList.contains('show')) {
-        fixedBanner.classList.remove('show');
+    } else if (
+        scrollY <= scrollThreshold &&
+        fixedBanner.classList.contains('show') &&
+        !isFixedSearchFocused &&
+        !scrollingDown
+    ) {
+        fixedBanner.classList.add('hide');
         setTimeout(() => {
+            fixedBanner.classList.remove('show');
             fixedBanner.style.display = 'none';
-
-            if (searchBar && searchBar.value.length > 0) {
-                searchBar.focus();
-            }
-        }, 300);
+        }, 300); // Delay to match CSS animation duration
     }
 }
-
-
 
 // Function to filter blocks based on search query
 function filterBlocks(query) {
@@ -232,7 +247,7 @@ function filterBlocks(query) {
         const title = block.dataset.title;
         const description = block.dataset.description;
         if (title.includes(query) || description.includes(query)) {
-            block.style.display = 'block';
+            block.style.display = 'flex';
         } else {
             block.style.display = 'none';
         }

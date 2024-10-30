@@ -37,3 +37,9 @@
 
 >#### Semantic colors added:
 > - `BG_SURFACE_OVERLAY_TMP`
+
+## v1.11
+
+### Fixes & improvements:
+- Remove auto focus from search bars, which caused untimely keyboard openings on mobile devices
+- Minor UI fixes
