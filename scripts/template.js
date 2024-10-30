@@ -4,7 +4,7 @@ function showPreview(fileName) {
     const jsonPreview = document.getElementById("jsonPreview");
 
     // Templates URL
-    const fileUrl = `https://raw.githubusercontent.com/Purple-EyeZ/Bunny-Theme-Keys/refs/heads/main/${fileName}`;
+    const fileUrl = `https://raw.githubusercontent.com/Purple-EyeZ/Bunny-Theme-Keys/refs/heads/main/templates/${fileName}`;
 
     // Fetch and display json content
     fetch(fileUrl)
@@ -25,7 +25,7 @@ function showPreview(fileName) {
 
 // Download button
 function downloadTemplate(fileName) {
-    const fileUrl = `https://raw.githubusercontent.com/Purple-EyeZ/Bunny-Theme-Keys/refs/heads/main/${fileName}`;
+    const fileUrl = `https://raw.githubusercontent.com/Purple-EyeZ/Bunny-Theme-Keys/refs/heads/main/templates/${fileName}`;
 
     fetch(fileUrl)
         .then(response => {
