@@ -1,0 +1,22 @@
+{
+    "name": "Theme name",
+    "description": "Theme description",
+    "authors": [
+        {
+            "name": "Author"
+        }
+    ],
+    "semanticColors": {
+        "Semantic_color_1": [
+            "#00ff00"
+        ],
+        "Semantic_color_2": [
+            "#00ff00"
+        ]
+    },
+    "rawColors": {
+        "RAW_Color_1": "#00ff00",
+        "RAW_Color_2": "#00ff00"
+    },
+    "spec": 2
+}
