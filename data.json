@@ -53,9 +53,16 @@
             "id": 11,
             "title": "BACKGROUND_SECONDARY",
             "images": [
-                "images/Semantic-colors/id-11.jpg"
+                "images/Semantic-colors/id_11.0.jpg",
+                "images/Semantic-colors/id_11.1.jpg",
+                "images/Semantic-colors/id_11.2.jpg",
+                "images/Semantic-colors/id_11.3.jpg",
+                "images/Semantic-colors/id_11.4.jpg",
+                "images/Semantic-colors/id_11.5.jpg",
+                "images/Semantic-colors/id_11.6.jpg"
+
             ],
-            "description": "Background folder closed, the 2 buttons under the server list (Join server & Find group)."
+            "description": "User profile background / Message button / Reply bar / Server selector background in emoji picker / Settings background / Folders background / 2 buttons under server list (Join server & Find group)."
         },
         {
             "id": 12,
@@ -240,14 +247,6 @@
             "description": "Chat input background."
         },
         {
-            "id": 46,
-            "title": "CHAT_SWIPE_TO_REPLY_BACKGROUND",
-            "images": [
-                "images/Semantic-colors/id-46.jpg"
-            ],
-            "description": "Swipe to reply background."
-        },
-        {
             "id": 49,
             "title": "EMBED_BACKGROUND",
             "images": [
@@ -299,6 +298,16 @@
                 "images/Semantic-colors/id_98.1.jpg"
             ],
             "description": "Navigation bar / Toast background."
+        },
+        {
+            "id": 99,
+            "title": "BACKGROUND_FLOATING",
+            "images": [
+                "images/Semantic-colors/id_99.0.jpg",
+                "images/Semantic-colors/id_99.1.jpg",
+                "images/Semantic-colors/id_99.2.jpg"
+            ],
+            "description": "Backdrop / Navigation bar / Context menu."
         }
     ],
     "rawColors": [
@@ -524,6 +533,14 @@
                 "images/RAW-colors/id_26.jpg"
             ],
             "description": "Bottom bar emoji picker."
+        },
+        {
+            "id": 46,
+            "title": "PLUM_22",
+            "images": [
+                "images/RAW-colors/id-46.jpg"
+            ],
+            "description": "Swipe to reply background."
         },
         {
             "id": 63,

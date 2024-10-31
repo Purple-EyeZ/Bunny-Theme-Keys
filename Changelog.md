@@ -43,3 +43,17 @@
 ### Fixes & improvements:
 - Remove auto focus from search bars, which caused untimely keyboard openings on mobile devices
 - Minor UI fixes
+
+## v1.12
+
+>#### Semantic colors changes:
+> - `BACKGROUND_SECONDARY` Update description / screenshots [id:11] 
+
+>#### Semantic colors removed:
+> - `CHAT_SWIPE_TO_REPLY_BACKGROUND` outdated in latest versions (replaced by `PLUM_22`)
+
+>#### Semantic colors added:
+> - `BACKGROUND_FLOATING`
+
+>#### RAW colors added:
+> - `PLUM_22`
