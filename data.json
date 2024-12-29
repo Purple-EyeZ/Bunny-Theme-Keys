@@ -345,7 +345,7 @@
             "id": 102,
             "title": "BORDER_STRONG",
             "images": [
-                "/images/Semantic-colors/id_102.png"
+                "images/Semantic-colors/id_102.png"
             ],
             "description": "Even more borders. (doesn't seem to be used elsewhere)"
         },
@@ -353,7 +353,7 @@
             "id": 103,
             "title": "BG_SURFACE_RAISED",
             "images": [
-                "/images/Semantic-colors/id_103.png"
+                "images/Semantic-colors/id_103.png"
             ],
             "description": "Cards in profile view and “You” tab / Badge background."
         }
