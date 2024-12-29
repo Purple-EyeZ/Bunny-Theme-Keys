@@ -186,7 +186,7 @@
             "images": [
                 "images/Semantic-colors/id-31.jpg"
             ],
-            "description": "Channel category name."
+            "description": "[OUTDATED] Channel category name."
         },
         {
             "id": 32,
@@ -271,6 +271,15 @@
             "description": "Emoji picker background."
         },
         {
+            "id": 62,
+            "title": "BG_BASE_TERTIARY",
+            "images": [
+                "images/Semantic-colors/id_62.0.png",
+                "images/Semantic-colors/id_62.1.png"
+            ],
+            "description": "Background. (Same as 'BACKGROUND_SECONDARY_ALT')"
+        },
+        {
             "id": 63,
             "title": "PANEL_BG",
             "images": [
@@ -308,6 +317,45 @@
                 "images/Semantic-colors/id_99.2.jpg"
             ],
             "description": "Backdrop / Navigation bar / Context menu."
+        },
+        {
+            "id": 100,
+            "title": "BORDER_FAINT",
+            "images": [
+                "images/Semantic-colors/id_100.0.png",
+                "images/Semantic-colors/id_100.1.png",
+                "images/Semantic-colors/id_100.3.png",
+                "images/Semantic-colors/id_100.4.png"
+            ],
+            "description": "Borders."
+        },
+        {
+            "id": 101,
+            "title": "BORDER_SUBTLE",
+            "images": [
+                "images/Semantic-colors/id_101.0.png",
+                "images/Semantic-colors/id_101.1.png",
+                "images/Semantic-colors/id_101.2.png",
+                "images/Semantic-colors/id_101.3.png",
+                "images/Semantic-colors/id_101.4.png"
+            ],
+            "description": "More borders."
+        },
+        {
+            "id": 102,
+            "title": "BORDER_STRONG",
+            "images": [
+                "/images/Semantic-colors/id_102.png"
+            ],
+            "description": "Even more borders. (doesn't seem to be used elsewhere)"
+        },
+        {
+            "id": 103,
+            "title": "BG_SURFACE_RAISED",
+            "images": [
+                "/images/Semantic-colors/id_103.png"
+            ],
+            "description": "Cards in profile view and “You” tab / Badge background."
         }
     ],
     "rawColors": [

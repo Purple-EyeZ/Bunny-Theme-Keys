@@ -46,6 +46,7 @@
 
 ## v1.12
 
+### Keys:
 >#### Semantic colors changes:
 > - `BACKGROUND_SECONDARY` Update description / screenshots [id:11] 
 
@@ -57,3 +58,13 @@
 
 >#### RAW colors added:
 > - `PLUM_22`
+
+## v1.13
+
+### Keys:
+>#### Semantic colors added:
+> - `BG_BASE_TERTIARY`
+> - `BG_SURFACE_RAISED`
+> - `BORDER_FAINT`
+> - `BORDER_STRONG`
+> - `BORDER_SUBTLE`
