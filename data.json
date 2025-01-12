@@ -156,6 +156,15 @@
             "description": "Unread channel icons, unread server, selected tab."
         },
         {
+            "id": 25,
+            "title": "INTERACTIVE_MUTED",
+            "images": [
+                "images/Semantic-colors/id_25.0.jpg",
+                "images/Semantic-colors/id_25.1.jpg"
+            ],
+            "description": "Disabled switches."
+        },
+        {
             "id": 26,
             "title": "INTERACTIVE_NORMAL",
             "images": [
@@ -260,7 +269,7 @@
             "images": [
                 "images/Semantic-colors/id-56.jpg"
             ],
-            "description": "Color of toggle buttons ."
+            "description": "Color of switch buttons."
         },
         {
             "id": 61,
@@ -461,7 +470,7 @@
                 "images/RAW-colors/id_PL13.1.gif",
                 "images/RAW-colors/id_PL13.2.gif"
             ],
-            "description": "Selected server in emoji picker, disabled toggle, and secondary button pressed."
+            "description": "Selected server in emoji picker, disabled switches, and secondary button pressed."
         },
         {
             "id": 10,
@@ -557,6 +566,16 @@
                 "images/RAW-colors/id_17.jpg"
             ],
             "description": "Icon emoji in the context menu, and maybe other things?."
+        },
+        {
+            "id": 19,
+            "title": "PRIMARY_400",
+            "images": [
+                "images/RAW-colors/id_19.0.jpg",
+                "images/RAW-colors/id_19.1.jpg",
+                "images/RAW-colors/id_19.2.jpg"
+            ],
+            "description": "Username in mention list / Character counter."
         },
         {
             "id": 21,

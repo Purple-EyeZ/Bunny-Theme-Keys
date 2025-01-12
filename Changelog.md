@@ -68,3 +68,12 @@
 > - `BORDER_FAINT`
 > - `BORDER_STRONG`
 > - `BORDER_SUBTLE`
+
+## v1.13.1
+
+### Keys:
+>#### Semantic colors added:
+> - `INTERACTIVE_MUTED`
+
+>#### RAW colors added:
+> - `PRIMARY_400`
