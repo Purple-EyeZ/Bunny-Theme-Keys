@@ -113,7 +113,7 @@ function renderBlocks(blocks, containerId) {
         block.images.forEach((mediaUrl) => {
             const fileExtension = mediaUrl.split('.').pop().toLowerCase();
 
-            if (['jpg', 'jpeg', 'png', 'gif'].includes(fileExtension)) {
+            if (['jpg', 'jpeg', 'png', 'gif', 'webp'].includes(fileExtension)) {
                 // Handle image
                 const imgElement = document.createElement('img');
                 imgElement.dataset.src = mediaUrl;

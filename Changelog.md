@@ -77,3 +77,8 @@
 
 >#### RAW colors added:
 > - `PRIMARY_400`
+
+## v1.14.0
+
+### Fixes & improvements:
+- Change image format to .webp
