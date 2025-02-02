@@ -2,7 +2,7 @@ body {
     font-family: 'Noto Sans', sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: #181a1b;
+    background-color: #17191A;
     color: #e0e0e0;
 }
 
@@ -50,15 +50,15 @@ h1 {
 /* Styles main search bar */
 .search-bar {
     width: 50%;
-    padding-left: 10px;
+    padding-left: 15px;
     height: 40px;
     font-size: 16px;
-    border-radius: 8px;
+    border-radius: 20px;
     border: 1px solid transparent;
-    background-color: #1f2122;
+    background-color: #121212;
     color: #e0e0e0;
     transition: box-shadow 0.3s, border-color 0.3s;
-    box-shadow: 0 0 15px rgba(142, 45, 226, 0.5);
+    box-shadow: 0px 0px 7px 1px rgba(142, 45, 226, 0.5);
 }
 
 .search-bar:focus {
@@ -169,7 +169,7 @@ h1 {
     color: #ffffff;
     padding: 10px 20px;
     font-size: 16px;
-    border-radius: 8px;
+    border-radius: 20px;
     cursor: pointer;
     margin: 0 5px;
     margin-top: 7px;
@@ -213,7 +213,7 @@ h1 {
     background-color: #1f2122;
     max-height: 400px;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 16px;
     padding: 10px;
     padding-bottom: 10px;
     position: relative;
@@ -222,7 +222,7 @@ h1 {
     align-items: center;
     box-sizing: border-box;
     justify-content: space-between;
-    box-shadow: -1px 2px 9px 0px rgba(0, 0, 0, 0.54), inset 0 5px 14px 0px rgb(51 7 141 / 31%);
+    /* box-shadow: -1px 2px 9px 0px rgba(0, 0, 0, 0.54), inset 0 5px 14px 0px rgb(51 7 141 / 31%); */
     transition: max-height 0.5s ease, padding-bottom 0.5s ease, transform 0.5s ease;
 }
 
@@ -305,7 +305,7 @@ h1 {
     background-color: #4a00e0;
     color: #ffffff;
     border: none;
-    border-radius: 8px;
+    border-radius: 18px;
     padding: 8px 9px;
     cursor: pointer;
     font-size: 15px;
@@ -468,7 +468,7 @@ h1 {
     background-color: #4a00e0;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 20px;
     padding: 10px 12px;
     font-size: 16px;
     cursor: pointer;
@@ -491,7 +491,7 @@ h1 {
     left: 0;
     background-color: #292929;
     border: 1px solid #575757;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     width: 160px;
@@ -509,6 +509,10 @@ h1 {
     align-items: center;
 }
 
+.dropdown-menu ul li:last-child {
+    border-bottom: none;
+}
+
 .dropdown-menu ul li a {
     display: flex;
     align-items: center;
@@ -518,6 +522,14 @@ h1 {
     color: #f1f1f1;
     transition: background-color 0.3s;
     flex-grow: 1;
+}
+
+.dropdown-menu ul li:first-child a:hover {
+    border-radius: 8px 8px 0 0;
+}
+
+.dropdown-menu ul li:last-child a:hover {
+    border-radius: 0 0 8px 8px;
 }
 
 .dropdown-menu ul li a:hover {
@@ -917,7 +929,12 @@ h2, p {
 }
 
 /* Styles for phone screens */
-@media (max-width: 434px) {
+@media (max-width: 500px) {
+    
+    .search-container {
+        max-width: 100%;
+    }
+
     .category-buttons {
         flex-direction: column;
         align-items: center;
@@ -925,8 +942,7 @@ h2, p {
 
     .category-button {
         width: 100%;
-        max-width: 300px;
-        margin: 10px 0;
+        margin: 10px 20px;
     }
 
     .bloc h3 {

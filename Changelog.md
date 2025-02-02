@@ -82,3 +82,51 @@
 
 ### Fixes & improvements:
 - Change image format to .webp
+
+## v1.15.0
+
+### Fixes & improvements:
+- Fixed dropdown menu glitch with rounded corners and dividers
+- Made various UI changes
+
+### Keys:
+>#### Semantic colors changes:
+> - `BACKGROUND_SECONDARY_ALT`
+> - `BG_BASE_TERTIARY`
+> - `BACKGROUND_ACCENT`
+> - `INTERACTIVE_MUTED`
+
+>#### RAW colors changes:
+> - `PLUM_18`
+> - `PLUM_13`
+> - `PRIMARY_660`
+> - `PLUM_19`
+
+>#### Semantic colors added:
+> - `THREAD_CHANNEL_SPINE`
+> - `BG_MOD_FAINT`
+> - `BG_MOD_STRONG`
+> - `REDESIGN_BUTTON_TERTIARY_BACKGROUND`
+> - `INPUT_BACKGROUND`
+> - `REDESIGN_INPUT_CONTROL_ACTIVE_BG`
+> - `BUTTON_OUTLINE_DANGER_BORDER`
+> - `STATUS_DND`
+> - `TEXT_LINK`
+
+>#### RAW colors added:
+> - `PLUM_15`
+> - `PLUM_14`
+> - `PRIMARY_800`
+> - `PRIMARY_700`
+> - `BLUE_345`
+> - `GREEN_430`
+> - `GREEN_460`
+> - `RED_430`
+> - `RED_460`
+
+>#### Semantic colors removed:
+> - `BACKGROUND_MOBILE_SECONDARY`
+> - `ROLE_DEFAULT`
+
+>#### RAW colors removed:
+> - `PRIMARY_600`

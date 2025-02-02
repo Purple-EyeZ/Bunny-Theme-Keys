@@ -12,15 +12,11 @@
             "id": 2,
             "title": "BACKGROUND_ACCENT",
             "images": [
-                "images/Semantic-colors/id-2.webp"
+                "images/Semantic-colors/id-2.webp",
+                "images/Semantic-colors/id_2.1.webp",
+                "images/Semantic-colors/id_2.2.webp"
             ],
-            "description": "Server activity icon."
-        },
-        {
-            "id": 5,
-            "title": "BACKGROUND_MOBILE_SECONDARY",
-            "images": [],
-            "description": "Appears very briefly while certain interface elements are loading (from what I've seen)."
+            "description": "Server activity icon, reply line, and thread icon background."
         },
         {
             "id": 6,
@@ -67,9 +63,13 @@
             "id": 12,
             "title": "BACKGROUND_SECONDARY_ALT",
             "images": [
-                "images/Semantic-colors/id-12.webp"
+                "images/Semantic-colors/id-12.webp",
+                "images/Semantic-colors/id_12.1.webp",
+                "images/Semantic-colors/id_12.2.webp",
+                "images/Semantic-colors/id_12.3.webp",
+                "images/Semantic-colors/id_12.4.webp"
             ],
-            "description": "Background."
+            "description": "Background for tags in forum posts, code block borders, and forum channel buttons. (Check BG_BASE_TERTIARY)"
         },
         {
             "id": 13,
@@ -128,7 +128,7 @@
             "images": [
                 "images/Semantic-colors/id-19.webp"
             ],
-            "description": "Icons of channels already read (Muted)."
+            "description": "Icons of already read channels."
         },
         {
             "id": 21,
@@ -159,9 +159,11 @@
             "title": "INTERACTIVE_MUTED",
             "images": [
                 "images/Semantic-colors/id_25.0.webp",
-                "images/Semantic-colors/id_25.1.webp"
+                "images/Semantic-colors/id_25.1.webp",
+                "images/Semantic-colors/id_25.2.webp",
+                "images/Semantic-colors/id_25.3.webp"
             ],
-            "description": "Disabled switches."
+            "description": "Disabled switches background, quote line, and muted channel names."
         },
         {
             "id": 26,
@@ -283,9 +285,10 @@
             "title": "BG_BASE_TERTIARY",
             "images": [
                 "images/Semantic-colors/id_62.0.webp",
-                "images/Semantic-colors/id_62.1.webp"
+                "images/Semantic-colors/id_62.1.webp",
+                "images/Semantic-colors/id_62.2.webp"
             ],
-            "description": "Background. (Same as 'BACKGROUND_SECONDARY_ALT')"
+            "description": "Background / Forum channel buttons."
         },
         {
             "id": 63,
@@ -364,6 +367,80 @@
                 "images/Semantic-colors/id_103.webp"
             ],
             "description": "Cards in profile view and “You” tab / Badge background."
+        },
+        {
+            "id": 110,
+            "title": "THREAD_CHANNEL_SPINE",
+            "images": [
+                "images/Semantic-colors/id_110.0.webp"
+            ],
+            "description": "Line."
+        },
+        {
+            "id": 111,
+            "title": "BG_MOD_FAINT",
+            "images": [
+                "images/Semantic-colors/id_111.0.webp",
+                "images/Semantic-colors/id_111.1.webp"
+            ],
+            "description": "Polls, selected channel, folders."
+        },
+        {
+            "id": 112,
+            "title": "BG_MOD_STRONG",
+            "images": [
+                "images/Semantic-colors/id_112.0.webp",
+                "images/Semantic-colors/id_112.1.webp"
+            ],
+            "description": "Divider DMs/Servers list."
+        },
+        {
+            "id": 113,
+            "title": "REDESIGN_BUTTON_TERTIARY_BACKGROUND",
+            "images": [
+                "images/Semantic-colors/id_113.0.webp"
+            ],
+            "description": "Chat buttons background."
+        },
+        {
+            "id": 114,
+            "title": "INPUT_BACKGROUND",
+            "images": [
+                "images/Semantic-colors/id_114.0.webp"
+            ],
+            "description": "Search bars, all text input areas (except chat input), + emoji/GIFs/Stickers background."
+        },
+        {
+            "id": 115,
+            "title": "REDESIGN_INPUT_CONTROL_ACTIVE_BG",
+            "images": [
+                "images/Semantic-colors/id_115.0.webp"
+            ],
+            "description": "Emoji picker button."
+        },
+        {
+            "id": 116,
+            "title": "BUTTON_OUTLINE_DANGER_BORDER",
+            "images": [
+                "images/Semantic-colors/id_116.0.webp"
+            ],
+            "description": "Background for red notification badges."
+        },
+        {
+            "id": 117,
+            "title": "STATUS_DND",
+            "images": [
+                "images/Semantic-colors/id_117.0.webp"
+            ],
+            "description": "Do not disturb."
+        },
+        {
+            "id": 118,
+            "title": "TEXT_LINK",
+            "images": [
+                "images/Semantic-colors/id_118.0.webp"
+            ],
+            "description": "Links color."
         }
     ],
     "rawColors": [
@@ -465,11 +542,32 @@
             "images": [
                 "images/RAW-colors/id_PL13.0.webp",
                 "images/RAW-colors/id_PL13.1.webp",
+                "images/RAW-colors/id_PL13.2.webp",
                 "images/RAW-colors/id_PL13.0.gif",
                 "images/RAW-colors/id_PL13.1.gif",
                 "images/RAW-colors/id_PL13.2.gif"
             ],
-            "description": "Selected server in emoji picker, disabled switches, and secondary button pressed."
+            "description": "Selected server in emoji picker, disabled switches, quote line, and secondary button pressed."
+        },
+        {
+            "id": "PL14",
+            "title": "PLUM_14",
+            "images": [
+                "images/RAW-colors/id_PL14.0.webp"
+            ],
+            "description": "Spoiler hidden background."
+        },
+        {
+            "id": "PL15",
+            "title": "PLUM_15",
+            "images": [
+                "images/RAW-colors/id_PL15.0.webp",
+                "images/RAW-colors/id_PL15.1.webp",
+                "images/RAW-colors/id_PL15.2.webp",
+                "images/RAW-colors/id_PL15.3.webp",
+                "images/RAW-colors/id_PL15.4.webp"
+            ],
+            "description": "Reply line, code block borders, thread icon, status, forum tags, and secondary buttons background."
         },
         {
             "id": 10,
@@ -500,21 +598,20 @@
                 "images/RAW-colors/id_PL18.4.webp",
                 "images/RAW-colors/id_PL18.5.webp",
                 "images/RAW-colors/id_PL18.6.webp",
-                "images/RAW-colors/id_PL18.7.webp"
+                "images/RAW-colors/id_PL18.7.webp",
+                "images/RAW-colors/id_PL18.8.webp"
             ],
-            "description": "Message icon background, folder background, file in chat, invite embed background, quote sidebar, primary card menu/settings, and background in profile view."
+            "description": "Background for code blocks, forum buttons, message icons, folders, chat files, embeds, primary cards menu/settings, profile cards, commands list, and reactions (excluding your own)."
         },
         {
             "id": "PL19",
             "title": "PLUM_19",
             "images": [
-                "images/RAW-colors/id_PL19.0.webp",
                 "images/RAW-colors/id_PL19.1.webp",
                 "images/RAW-colors/id_PL19.2.webp",
-                "images/RAW-colors/id_PL19.3.webp",
                 "images/RAW-colors/id_PL19.4.webp"
             ],
-            "description": "Code blocks background, poll background, tags in forum posts, some buttons in forum posts, card top message tab, and reaction background (doesn’t affect reactions you made yourself)."
+            "description": "Background for polls, forum tags, and top message tab cards."
         },
         {
             "id": 12,
@@ -585,20 +682,30 @@
             "description": "Joined button text on invite embed."
         },
         {
-            "id": 23,
-            "title": "PRIMARY_600",
-            "images": [
-                "images/RAW-colors/id_23.webp"
-            ],
-            "description": "Links embed background."
-        },
-        {
             "id": 26,
             "title": "PRIMARY_660",
             "images": [
-                "images/RAW-colors/id_26.webp"
+                "images/RAW-colors/id_26.0.webp"
             ],
-            "description": "Bottom bar emoji picker."
+            "description": "Background for bots list in commands."
+        },
+        {
+            "id": "PR700",
+            "title": "PRIMARY_700",
+            "images": [
+                "images/RAW-colors/id_PR700.0.webp",
+                "images/RAW-colors/id_PR700.1.webp"
+            ],
+            "description": "Border of files in the chat, commands background."
+        },
+        {
+            "id": "PR800",
+            "title": "PRIMARY_800",
+            "images": [
+                "images/RAW-colors/id_PR800.0.webp",
+                "images/RAW-colors/id_PR800.1.webp"
+            ],
+            "description": "Spoiler button and command options background."
         },
         {
             "id": 46,
@@ -616,14 +723,6 @@
                 "images/RAW-colors/id_63.1.webp"
             ],
             "description": "Badges notifications, Do Not Disturb status, error border in text field."
-        },
-        {
-            "id": 73,
-            "title": "ROLE_DEFAULT",
-            "images": [
-                "images/RAW-colors/id_73.webp"
-            ],
-            "description": "Spoiler button."
         },
         {
             "id": 95,
@@ -654,6 +753,42 @@
                 "images/RAW-colors/id_102.1.webp"
             ],
             "description": "Search bar, Android navbar, background emoji picker buttons."
+        },
+        {
+            "id": "BL345",
+            "title": "BLUE_345",
+            "images": [
+                "images/RAW-colors/id_BL345.0.webp"
+            ],
+            "description": "Links color."
+        },
+        {
+            "id": "GR430",
+            "title": "GREEN_430",
+            "images": [
+                "images/RAW-colors/id_GR430.0.webp"
+            ],
+            "description": "Green buttons background."
+        },
+        {
+            "id": "GR460",
+            "title": "GREEN_460",
+            "images": [],
+            "description": "Green buttons pressed background. (see GREEN_430)"
+        },
+        {
+            "id": "RE430",
+            "title": "RED_430",
+            "images": [
+                "images/RAW-colors/id_RE430.0.webp"
+            ],
+            "description": "Red buttons background."
+        },
+        {
+            "id": "RE460",
+            "title": "RED_460",
+            "images": [],
+            "description": "Red buttons pressed background. (see RED_430)"
         }
     ]
 }
