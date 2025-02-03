@@ -77,11 +77,7 @@ h1 {
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
-    padding-right: 10px;
-}
-
-.clear-button:hover {
-    color: #8e2de2;
+    padding: 5px 10px;
 }
 
 /* Styles for fixed banner/search bar */
@@ -134,6 +130,8 @@ h1 {
     opacity: 0;
     visibility: hidden;
     transition: width 0.3s ease, opacity 0.3s ease, visibility 0s linear 0.3s;
+    max-width: 270px;
+    max-height: 34px;
 }
 
 .fixed-banner .search-bar.show {
@@ -144,10 +142,6 @@ h1 {
     margin-right: 10px;
     max-width: 270px;
     max-height: 34px;
-}
-
-.fixed-banner .search-bar.hidden {
-    max-width: 270px;
 }
 
 /* Styles category buttons */
@@ -178,11 +172,6 @@ h1 {
     box-shadow: inset 0 4px 15px rgba(142, 45, 226, 0.5);
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-}
-
-.category-button:hover {
-    background-image: linear-gradient(to right, #8e2de2, #4a00e0);
-    transform: scale(1.03);
 }
 
 .category-button.active {
@@ -224,6 +213,7 @@ h1 {
     justify-content: space-between;
     /* box-shadow: -1px 2px 9px 0px rgba(0, 0, 0, 0.54), inset 0 5px 14px 0px rgb(51 7 141 / 31%); */
     transition: max-height 0.5s ease, padding-bottom 0.5s ease, transform 0.5s ease;
+    border: 1px solid #222325;
 }
 
 .bloc.expanded {
@@ -314,12 +304,6 @@ h1 {
     bottom: 8px;
     right: 9px;
     max-height: 33px;
-}
-
-.toggle-button:hover {
-    background-color: #8e2de2;
-    box-shadow: 0 0 4px rgba(178, 16, 241, 0.5), 0 2px 15px rgba(110, 13, 221, 0.575);
-    transform: scale(1.01);
 }
 
 .toggle-button .material-symbols-rounded {
@@ -479,11 +463,6 @@ h1 {
     font-family: 'Poppins', sans-serif;
 }
 
-.menu-button:hover {
-    background-color: #8e2de2;
-    box-shadow: 0 0 4px rgba(178, 16, 241, 0.5), 0 2px 15px rgba(110, 13, 221, 0.575);
-}
-
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -532,10 +511,6 @@ h1 {
     border-radius: 0 0 8px 8px;
 }
 
-.dropdown-menu ul li a:hover {
-    background-color: #3f3f3f;
-}
-
 /* Style for the Back to Top button */
 .back-to-top {
     position: fixed;
@@ -552,10 +527,6 @@ h1 {
     font-size: 16px;
     z-index: 1000;
     transition: background-color 0.3s;
-}
-
-.back-to-top:hover {
-    background-color: #8e2de2;
 }
 
 .back-to-top .material-symbols-rounded {
@@ -589,7 +560,7 @@ h1 {
 /* Templates styles */
 .template-section {
     padding: 0px;
-    background-color: #181a1b;;
+    background-color: #181a1b;
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
     text-align: center;
@@ -617,14 +588,15 @@ h1 {
 .template-item {
     background-color: #121212;
     padding: 15px;
-    border-radius: 8px;
+    border-radius: 16px;
     width: 300px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
     transition: transform 0.3s;
     display: flex;
     gap: 10px;
     flex-direction: column;
+    border: 1px solid #1c1d1d;
 }
 
 .template-item h3 {
@@ -639,15 +611,16 @@ h1 {
     margin-bottom: 12px;
 }
 
-.preview-button, .download-button {
+.preview-button,
+.download-button {
     background-color: #4a00e0;
     color: #ffffff;
     border: none;
-    border-radius: 5px;
     padding: 10px 15px;
     font-size: 0.9em;
     cursor: pointer;
     margin: 5px;
+    border-radius: 20px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -655,50 +628,54 @@ h1 {
     text-decoration: none;
 }
 
-.preview-button span, .download-button span {
+.preview-button span,
+.download-button span {
     margin-right: 5px;
     font-size: 1.2em;
 }
 
-.preview-button:hover, .download-button:hover {
-    background-color: #8e2de2;
-    box-shadow: 0 0 4px rgba(178, 16, 241, 0.5), 0 2px 15px rgba(110, 13, 221, 0.575);
-    transform: scale(1.01);
-}
-
 .preview-container {
-    background-color: #1e1e1e;
+    background-color: #1f2122;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 16px;
+    /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); */
     max-width: 600px;
     margin: 20px auto;
+    margin-bottom: 60px;
     text-align: left;
+    border: 1px solid #222325;
 }
 
 .preview-container h3 {
     font-size: 1.8em;
     color: #ffffff;
+    margin-top: 5px;
     margin-bottom: 10px;
     text-align: center;
+}
+
+.json-preview-container {
+    background-color: #121212;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 15px 0;
 }
 
 #jsonPreview {
     background-color: #121212;
     color: #ffffff;
     padding: 15px;
-    border-radius: 8px;
     overflow-x: auto;
     max-height: 300px;
     font-size: 0.9em;
     scrollbar-color: #4a00e0 #121212;
+    margin: 0;
 }
 
 .close-button {
     background-color: #e04a4a;
     color: #ffffff;
     border: none;
-    border-radius: 5px;
     padding: 10px 15px;
     font-size: 0.9em;
     cursor: pointer;
@@ -717,36 +694,18 @@ h1 {
     margin-right: 5px;
 }
 
-.close-button:hover {
-    background-color: #f06e6e;
-    box-shadow: 0 0 4px rgba(241, 16, 16, 0.5), 0 2px 15px rgba(221, 13, 13, 0.575);
-    transform: scale(1.01);
-}
-
 /* Validator */
 button {
     background-color: #4a00e0;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     padding: 2px 20px;
     cursor: pointer;
 }
 
-button:not(.search-button):not(.category-button):not(.clear-button):not(.close-button):hover {
-    background-color: #8e2de2;
-    box-shadow: 0 0 4px rgba(178, 16, 241, 0.5), 0 2px 15px rgba(110, 13, 221, 0.575);
-    transform: scale(1.01);
-}
-
 #clearButton {
     background-color: #e04a4a;
-}
-
-#clearButton:hover {
-    background-color: #f06e6e;
-    box-shadow: 0 0 4px rgba(241, 16, 16, 0.5), 0 2px 15px rgba(221, 13, 13, 0.575);
-    transform: scale(1.01);
 }
 
 #clearButton .material-symbols-rounded {
@@ -777,7 +736,7 @@ button:not(.search-button):not(.category-button):not(.clear-button):not(.close-b
     background-color: #4a00e0;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 9px;
     z-index: 1;
 }
 
@@ -808,7 +767,6 @@ textarea {
     border: 1px solid #4a00e0;
     border-radius: 5px;
     padding: 10px;
-    margin-bottom: 10px;
 }
 
 .result-container {
@@ -924,13 +882,44 @@ p {
     margin-right: auto;
 }
 
-h2, p {
+h2,
+p {
     text-align: center;
+}
+
+/* Toast styles */
+#toast {
+    visibility: hidden;
+    min-width: 170px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    border-radius: 25px;
+    padding: 10px 20px;
+    position: fixed;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-175%);
+    font-size: 14px;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.2s, visibility 0.2s, transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid #5300dc;
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#toast.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
 }
 
 /* Styles for phone screens */
 @media (max-width: 500px) {
-    
+
     .search-container {
         max-width: 100%;
     }
@@ -970,4 +959,47 @@ h2, p {
         margin: 0px;
     }
 
+    #toast {
+        padding: 8px 15px;
+    }
+
+}
+
+/* Fix hover effects on touch devices */
+@media (pointer: fine) {
+    button:not(.search-button):not(.clear-button):hover,
+    .menu-button:hover,
+    .preview-button:hover,
+    .download-button:hover {
+        background-color: #8e2de2;
+        box-shadow: 0 0 4px rgba(178, 16, 241, 0.5), 0 2px 15px rgba(110, 13, 221, 0.575);
+    }
+
+    .category-button:hover {
+        background-image: linear-gradient(to right, #8e2de2, #4a00e0);
+    }
+
+    .clear-button:hover {
+        color: #8e2de2;
+    }
+
+    .close-button:hover,
+    #clearButton:hover {
+        background-color: #f06e6e;
+        box-shadow: 0 0 4px rgba(241, 16, 16, 0.5), 0 2px 15px rgba(221, 13, 13, 0.575);
+    }
+
+    .dropdown-menu ul li a:hover {
+        background-color: #3f3f3f;
+    }
+}
+
+button:not(.clear-button):active,
+.category-button:active,
+.toggle-button:active,
+.menu-button:active,
+.preview-button:active,
+.download-button:active,
+.close-button:active {
+    transform: scale(0.98);
 }

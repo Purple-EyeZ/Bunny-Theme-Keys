@@ -469,7 +469,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
+// Toast message
+function showToast(message) {
+    const toast = document.getElementById('toast');
+    toast.innerHTML = message;
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 2000); // 2 seconds
+}
 
 // Init 
 function initScrollHandling() {
@@ -489,7 +495,7 @@ window.onload = function () {
 document.addEventListener('DOMContentLoaded', () => {
     const whatsthat = document.getElementById('whatsthat');
     if (whatsthat) {
-        whatsthat.addEventListener('click', function(event) {
+        whatsthat.addEventListener('click', function (event) {
             event.preventDefault();
             window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank');
         });

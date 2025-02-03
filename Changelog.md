@@ -130,3 +130,11 @@
 
 >#### RAW colors removed:
 > - `PRIMARY_600`
+
+## v1.15.1
+
+### Fixes & improvements:
+- Extended UI changes from the last update to all pages
+- Fixed persistent hover effects on mobile devices
+- Copy action in the validator now shows a toast instead of an annoying popup
+- Various other fixes and UI/UX improvements
