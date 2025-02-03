@@ -12,11 +12,13 @@ function showPreview(fileName) {
         .then(data => {
             jsonPreview.textContent = JSON.stringify(data, null, 2);
             previewContainer.style.display = "block";
+            previewContainer.scrollIntoView({ behavior: "smooth" });
         })
         .catch(error => {
             console.error("Error loading JSON file:", error);
             jsonPreview.textContent = "Failed to load preview.";
             previewContainer.style.display = "block";
+            previewContainer.scrollIntoView({ behavior: "smooth" });
         });
 
     const downloadLink = document.getElementById("downloadLink");

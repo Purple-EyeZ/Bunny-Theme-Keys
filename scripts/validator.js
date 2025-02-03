@@ -314,18 +314,15 @@ document.getElementById('formatButton').addEventListener('click', function () {
 });
 
 // Copy the JSON content
-document.getElementById('copyButton').addEventListener('click', function () {
+document.getElementById('copyButton').addEventListener('click', async function () {
     const jsonInput = document.getElementById('jsonInput');
 
-    jsonInput.select();
-    jsonInput.setSelectionRange(0, 99999); // For mobile devices
-
     try {
-        // Copy the selected text to the clipboard
-        navigator.clipboard.writeText(jsonInput.value);
-        alert('JSON copied to clipboard!');
+        await navigator.clipboard.writeText(jsonInput.value);
+        showToast(`<span class="material-symbols-rounded" style="color: #4CAF50;">check</span><span>Copied to clipboard!</span>`);
     } catch (error) {
         console.error('Copy error:', error);
+        showToast(`<span class="material-symbols-rounded" style="color: #fa4343;">error</span><span>Failed to copy</span>`);
     }
 });
 
