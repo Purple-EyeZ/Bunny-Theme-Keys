@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
 </head>
@@ -25,18 +26,21 @@
     </div>
 
     <h1>
-        <img src="assets/revenge-dark.svg" alt="Logo" style="height: 40px; vertical-align: middle;">
+        <img src="assets/revenge-dark.svg" alt="Logo">
         Revenge Theme Keys
     </h1>
 
     <div class="search-container">
-        <input type="text" id="search-bar" class="search-bar" placeholder="Search something...">
-        <button type="button" id="clearSearch" class="clear-button" style="display: none;">&times;</button>
+        <div class="search-bar-wrapper">
+            <input type="text" id="search-bar" class="search-bar" placeholder="Search something...">
+            <button type="button" id="clearSearch" class="clear-button" style="display: none;">&times;</button>
+        </div>
+        <div id="searchSubtext" class="search-subtext"></div>
     </div>
 
     <div class="category-buttons">
-        <button class="category-button" onclick="showCategory('semantic-colors')">Semantic Colors</button>
-        <button class="category-button" onclick="showCategory('raw-colors')">RAW Colors</button>
+        <button class="category-button" data-category="semantic-colors">Semantic Colors</button>
+        <button class="category-button" data-category="raw-colors">RAW Colors</button>
     </div>
 
     <div class="category" id="semantic-colors">
@@ -55,43 +59,46 @@
         </button>
         <div id="dropdownMenu" class="dropdown-menu">
             <ul>
-                <li><a href="index.html"><span class="material-symbols-rounded">home</span> Home</a></li>
-                <li><a href="validator.html"><span class="material-symbols-rounded">check_circle</span> Validator</a>
-                </li>
-                <li><a href="template.html"><span class="material-symbols-rounded">description</span> Templates</a></li>
+                <li><a href="/"><span class="material-symbols-rounded">home</span> Home</a></li>
+                <li><a href="/Validator/"><span class="material-symbols-rounded">check_circle</span> Validator</a></li>
+                <li><a href="/Templates/"><span class="material-symbols-rounded">description</span> Templates</a></li>
                 <li><a href="https://vendetta-themes.gitbook.io/wiki" target="_blank"><span
                             class="material-symbols-rounded">book</span> Docs</a></li>
                 <li><a href="https://github.com/nexpid/Themelings/tree/data" target="_blank"><span
                             class="material-symbols-rounded">database</span> Themelings</a></li>
                 <li><a href="https://github.com/nexpid/ThemesPlus/tree/main/docs" target="_blank"><span
                             class="material-symbols-rounded">add</span> Themes Plus</a></li>
-                <li><a href="about.html"><span class="material-symbols-rounded">info</span> About</a></li>
-
-                <!-- <li><a href="#section3">Section 3</a></li> -->
-                <!-- <li><a href=" http://0.0.0.0:8000/ " target="_blank"><span class="material-symbols-outlined">home</span> Home</a></li> -->
-                <!-- External link (target="_blank" for open link in new tab) -->
+                <li><a href="/About/"><span class="material-symbols-rounded">info</span> About</a></li>
             </ul>
         </div>
     </div>
 
     <!-- Modal for image enlargement -->
     <div id="imageModal" class="modal">
-        <span class="close">&times;</span>
+        <span class="close material-symbols-rounded">close</span>
         <div id="modalTitle" class="modal-title"></div>
-        <span class="prev">&#10094;</span>
-        <span class="next">&#10095;</span>
+        <span class="prev material-symbols-rounded">arrow_back_ios</span>
+        <span class="next material-symbols-rounded">arrow_forward_ios</span>
         <div class="modal-content">
             <img id="modalImage" src="" alt="">
         </div>
     </div>
+
+    <!-- Fluid Effect Toggle Button -->
+    <button id="fluidToggleButton" class="fluid-toggle">
+        <span class="material-icons-outlined">
+            auto_fix_high
+        </span>
+    </button>
 
     <!-- Back to Top Button -->
     <button id="backToTopButton" class="back-to-top">
         <span class="material-symbols-rounded">arrow_upward</span>
     </button>
 
-    <script src="scripts/searchbar.js"></script>
-    <script src="scripts/scripts.js"></script>
+    <script type="module" src="scripts/shared.js"></script>
+
+    <script src="scripts/fluid.js"></script>
 
 </body>
 

@@ -138,3 +138,13 @@
 - Fixed persistent hover effects on mobile devices
 - Copy action in the validator now shows a toast instead of an annoying popup
 - Various other fixes and UI/UX improvements
+
+## v2.0.0
+
+### New Features:
+- Added swipe controls for the modal
+- Validator now supports font packs
+
+### Fixes & Improvements:
+- Improved search functionality
+- Various other fixes and UI/UX improvements

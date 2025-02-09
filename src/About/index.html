@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <link rel="icon" type="image/svg" href="assets/revenge-dark.svg">
+    <link rel="icon" type="image/svg" href="../assets/revenge-dark.svg">
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" as="style"
         onload="this.rel='stylesheet'">
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" as="style"
@@ -14,7 +14,8 @@
         as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" as="style"
         onload="this.rel='stylesheet'">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 
 <body>
@@ -33,23 +34,21 @@
         </button>
         <div id="dropdownMenu" class="dropdown-menu">
             <ul>
-                <li><a href="index.html"><span class="material-symbols-rounded">home</span> Home</a></li>
-                <li><a href="validator.html"><span class="material-symbols-rounded">check_circle</span> Validator</a>
-                </li>
-                <li><a href="template.html"><span class="material-symbols-rounded">description</span> Templates</a></li>
+                <li><a href="/"><span class="material-symbols-rounded">home</span> Home</a></li>
+                <li><a href="/Validator/"><span class="material-symbols-rounded">check_circle</span> Validator</a></li>
+                <li><a href="/Templates/"><span class="material-symbols-rounded">description</span> Templates</a></li>
                 <li><a href="https://vendetta-themes.gitbook.io/wiki" target="_blank"><span
                             class="material-symbols-rounded">book</span> Docs</a></li>
                 <li><a href="https://github.com/nexpid/Themelings/tree/data" target="_blank"><span
                             class="material-symbols-rounded">database</span> Themelings</a></li>
                 <li><a href="https://github.com/nexpid/ThemesPlus/tree/main/docs" target="_blank"><span
                             class="material-symbols-rounded">add</span> Themes Plus</a></li>
-                <li><a href="about.html"><span class="material-symbols-rounded">info</span> About</a></li>
+                <li><a href="/About/"><span class="material-symbols-rounded">info</span> About</a></li>
             </ul>
         </div>
     </div>
 
     <main>
-        <!-- Insert the HTML content here -->
         <h1>Reporting Issues</h1>
         <p>If you find any bad or outdated keys in the provided list, you can create an issue on GitHub <a
                 href="https://github.com/Purple-EyeZ/Bunny-Theme-Keys/issues">here</a>. This helps ensure the keys are
@@ -80,6 +79,13 @@
         </ul>
     </main>
 
+    <!-- Fluid Effect Toggle Button -->
+    <button id="fluidToggleButton" class="fluid-toggle">
+        <span class="material-icons-outlined">
+            auto_fix_high
+        </span>
+    </button>
+
     <!-- Back to Top Button -->
     <button id="backToTopButton" class="back-to-top">
         <span class="material-symbols-rounded">arrow_upward</span>
@@ -89,7 +95,8 @@
         FTFGTNBAATS/<span id="whatsthat">IHYWDS</span>
     </div>
 
-    <script src="scripts/scripts.js"></script>
+    <script type="module" src="../scripts/shared.js"></script>
+    <script src="../scripts/fluid.js"></script>
 </body>
 
 </html>
