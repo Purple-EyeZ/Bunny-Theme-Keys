@@ -5,7 +5,7 @@ const elements = {
     downloadLink: document.getElementById("downloadLink")
 };
 
-const BASE_URL = 'https://raw.githubusercontent.com/Purple-EyeZ/Bunny-Theme-Keys/refs/heads/main/Templates/';
+const BASE_URL = 'https://raw.githubusercontent.com/Purple-EyeZ/Bunny-Theme-Keys/refs/heads/main/src/Templates/';
 
 // Fetch template file
 async function fetchTemplate(fileName) {
