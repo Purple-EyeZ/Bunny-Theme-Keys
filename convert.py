@@ -4,10 +4,10 @@ import shutil
 from PIL import Image
 
 # Directory containing the files
-base_directory = "images"
+base_directory = "src/images"
 
 # Path to the JSON file
-json_path = "data.json"
+json_path = "src/data.json"
 
 # Convert images to WebP
 def convert_images_to_webp(base_directory):
