@@ -148,3 +148,18 @@
 ### Fixes & Improvements:
 - Improved search functionality
 - Various other fixes and UI/UX improvements
+
+## v2.1.0
+
+### Keys:
+>#### Semantic colors changes:
+> - `BACKGROUND_MODIFIER_ACTIVE`
+> - `BORDER_STRONG`
+
+>#### RAW colors changes:
+> - `PLUM_13`
+> - `PLUM_11`
+
+>#### Semantic colors added:
+> - `DIVIDER_SUBTLE`
+> - `TEXT_LOW_CONTRAST`
