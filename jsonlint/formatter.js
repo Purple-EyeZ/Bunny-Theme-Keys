@@ -1,2 +1,6 @@
 #!/usr/bin/env node
-var formatter=function(){function e(e,r){return new Array(r+1).join(e)}return{formatJson:function(r,a){var t,n=0,c=void 0!==a?a:"    ",o="",s=0,f=!1,u=null;for(n=0,t=r.length;n<t;n+=1)switch(u=r.charAt(n)){case"{":case"[":f?o+=u:(o+=u+"\n"+e(c,s+1),s+=1);break;case"}":case"]":o+=f?u:"\n"+e(c,s-=1)+u;break;case",":o+=f?u:",\n"+e(c,s);break;case":":o+=f?u:": ";break;case" ":case"\n":case"\t":f&&(o+=u);break;case'"':n>0&&"\\"!==r.charAt(n-1)&&(f=!f),o+=u;break;default:o+=u}return o}}}();"undefined"!=typeof require&&"undefined"!=typeof exports&&(exports.formatter=formatter);
+var formatter=function(){function s(t,i){return new Array(i+1).join(t)}function u(t,i){var a=0,o=0,c=typeof i!="undefined"?i:"    ",e="",f=0,n=!1,r=null;for(a=0,o=t.length;a<o;a+=1)switch(r=t.charAt(a),r){case"{":case"[":n?e+=r:(e+=r+`
+`+s(c,f+1),f+=1);break;case"}":case"]":n?e+=r:(f-=1,e+=`
+`+s(c,f)+r);break;case",":n?e+=r:e+=`,
+`+s(c,f);break;case":":n?e+=r:e+=": ";break;case" ":case`
+`:case"	":n&&(e+=r);break;case'"':a>0&&t.charAt(a-1)!=="\\"&&(n=!n),e+=r;break;default:e+=r;break}return e}return{formatJson:u}}();typeof require!="undefined"&&typeof exports!="undefined"&&(exports.formatter=formatter);
