@@ -459,6 +459,14 @@
                 "images/Semantic-colors/id_120.0.webp"
             ],
             "description": "Divider menus."
+        },
+        {
+            "id": 121,
+            "title": "REDESIGN_BUTTON_PRIMARY_PRESSED_BACKGROUND",
+            "images": [
+                "images/Semantic-colors/id_121.0.gif"
+            ],
+            "description": "Primary buttons pressed (basically all blurple buttons)."
         }
     ],
     "rawColors": [

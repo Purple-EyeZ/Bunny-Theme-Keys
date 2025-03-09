@@ -163,3 +163,9 @@
 >#### Semantic colors added:
 > - `DIVIDER_SUBTLE`
 > - `TEXT_LOW_CONTRAST`
+
+## v2.1.1
+
+### Keys:
+>#### Semantic colors added:
+> - `REDESIGN_BUTTON_PRIMARY_PRESSED_BACKGROUND`
