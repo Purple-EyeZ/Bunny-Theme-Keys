@@ -1,4 +1,5 @@
 import { showToast } from './shared.js';
+import jsonlint from '../jsonlint/jsonlint.js';
 
 // Fonts list
 const REQUIRED_FONTS = [

@@ -97,3 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+window.showPreview = showPreview;
+window.downloadTemplate = downloadTemplate;
+window.closePreview = closePreview;
