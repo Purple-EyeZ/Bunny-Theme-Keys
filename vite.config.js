@@ -4,16 +4,16 @@ import htmlMinifier from "vite-plugin-html-minifier";
 import { viteStaticCopy } from "vite-plugin-static-copy";
 
 export default defineConfig({
-  root: 'src',
-  build: {
-    outDir: '../dist',
-    emptyOutDir: true,
-    rollupOptions: {
+	root: "src",
+	build: {
+		outDir: "../dist",
+		emptyOutDir: true,
+		rollupOptions: {
 			input: {
 				main: resolve(__dirname, "src/index.html"),
 				validator: resolve(__dirname, "src/Validator/index.html"),
 				templates: resolve(__dirname, "src/Templates/index.html"),
-        about: resolve(__dirname, "src/About/index.html"),
+				about: resolve(__dirname, "src/About/index.html"),
 			},
 		},
 	},
@@ -32,19 +32,19 @@ export default defineConfig({
 					transform(content) {
 						return JSON.stringify(JSON.parse(content.toString()));
 					},
-        },
-        {
-          src: 'images',
-          dest: '.',
-        },
-        {
-          src: 'Templates/*.json',
-          dest: 'Templates/',
-          transform(content) {
+				},
+				{
+					src: "images",
+					dest: ".",
+				},
+				{
+					src: "Templates/*.json",
+					dest: "Templates/",
+					transform(content) {
 						return JSON.stringify(JSON.parse(content.toString()));
 					},
-        },
-      ],
-    }),
-  ],
+				},
+			],
+		}),
+	],
 });
