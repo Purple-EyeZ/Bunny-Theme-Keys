@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revenge Theme Templates</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Docs</title>
     <link rel="icon" type="image/svg" href="/assets/revenge-dark.svg">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -16,11 +16,6 @@
 
 <body>
     <div class="fixed-banner" id="fixedBanner"></div>
-
-    <h1>
-        <img src="/assets/revenge-dark.svg" alt="Logo">
-        Revenge Theme Templates
-    </h1>
 
     <!-- Sidebar -->
     <button id="menuButton" class="menu-button">
@@ -61,54 +56,7 @@
         </div>
     </aside>
 
-    <!-- templates section -->
-    <section class="template-section">
-        <h2>Download Templates</h2>
-        <p>Select a template to download for use in your projects:</p>
-
-        <div class="template-list">
-            <!-- Template 1 -->
-            <div class="template-item">
-                <h3>Themes Template</h3>
-                <p>Download a basic theme template.</p>
-                <button onclick="showPreview('ThemeTemplate.json')" class="preview-button">
-                    <span class="material-symbols-rounded">visibility</span> Preview
-                </button>
-                <button onclick="downloadTemplate('ThemeTemplate.json')" class="download-button">
-                    <span class="material-symbols-rounded">download</span> Download
-                </button>
-            </div>
-
-            <!-- Template 2 -->
-            <div class="template-item">
-                <h3>Fonts Template</h3>
-                <p>Download a basic font template.</p>
-                <button onclick="showPreview('FontTemplate.json')" class="preview-button">
-                    <span class="material-symbols-rounded">visibility</span> Preview
-                </button>
-                <button onclick="downloadTemplate('FontTemplate.json')" class="download-button">
-                    <span class="material-symbols-rounded">download</span> Download
-                </button>
-            </div>
-        </div>
-
-        <!-- Container for JSON preview -->
-        <div id="previewOverlay" class="preview-overlay"></div>
-        <div id="previewContainer" class="preview-container">
-            <h3>Template Preview</h3>
-            <div class="json-preview-container">
-                <pre id="jsonPreview"></pre>
-            </div>
-            <div class="preview-actions">
-                <a id="downloadLink" class="download-button">
-                    <span class="material-symbols-rounded">download</span> Download
-                </a>
-                <button onclick="closePreview()" class="close-button">
-                    <span class="material-symbols-rounded">cancel</span> Close
-                </button>
-            </div>
-        </div>
-    </section>
+    <main id="docsContent" class="docs-content">Loading…</main>
 
     <!-- Fluid Effect Toggle Button -->
     <button id="fluidToggleButton" class="fluid-toggle">
@@ -122,8 +70,8 @@
         <span class="material-symbols-rounded">arrow_upward</span>
     </button>
 
+    <script type="module" src="/scripts/docs.js"></script>
     <script type="module" src="/scripts/shared.js"></script>
-    <script type="module" src="/scripts/template.js"></script>
     <script type="module" src="/scripts/fluid.js"></script>
 </body>
 
