@@ -53,6 +53,24 @@ function initSidebar() {
 			.join("");
 	}
 
+	const setActiveDoc = (pageName) => {
+		els.docsSubmenu?.querySelectorAll("a[data-doc-link]")?.forEach((a) => {
+			const isActive = a.dataset.docLink === pageName;
+			a.classList.toggle("active", isActive);
+			isActive
+				? a.setAttribute("aria-current", "page")
+				: a.removeAttribute("aria-current");
+		});
+	};
+
+	if (location.pathname.includes("/Docs/")) {
+		const initialDoc =
+			new URLSearchParams(location.search).get("page") || docPages[0]?.name;
+		setActiveDoc(initialDoc);
+	} else {
+		setActiveDoc(null);
+	}
+
 	const toggleSidebar = (show) => {
 		sidebar.classList.toggle("open", show);
 		els.overlay?.classList.toggle("active", show);
@@ -75,6 +93,7 @@ function initSidebar() {
 					detail: { page: link.dataset.docLink },
 				}),
 			);
+			setActiveDoc(link.dataset.docLink);
 			if (window.innerWidth < 1024) toggleSidebar(false);
 		}
 	});
