@@ -44,6 +44,10 @@ export default defineConfig({
 						return JSON.stringify(JSON.parse(content.toString()));
 					},
 				},
+				{
+					src: "Docs/assets",
+					dest: "Docs/",
+				},
 			],
 		}),
 	],
