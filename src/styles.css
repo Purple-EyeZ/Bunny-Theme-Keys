@@ -667,6 +667,13 @@ body.modal-open {
 	color: #fff;
 }
 
+.submenu li a.active {
+	background-color: rgba(142, 45, 226, 0.12);
+	color: #fff;
+	font-weight: 600;
+	border-left: 3px solid #8e2de2;
+}
+
 .sidebar-overlay {
 	position: fixed;
 	inset: 0;
@@ -1363,6 +1370,11 @@ body.fluid-enabled .docs-content blockquote {
 	line-height: 1.7;
 	margin-bottom: 1rem;
 }
+
+.docs-content p {
+	max-width: 100%;
+}
+
 .docs-content > *:last-child {
 	margin-bottom: 0;
 }

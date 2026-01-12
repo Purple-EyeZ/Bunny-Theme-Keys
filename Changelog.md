@@ -169,3 +169,8 @@
 ### Keys:
 >#### Semantic colors added:
 > - `REDESIGN_BUTTON_PRIMARY_PRESSED_BACKGROUND`
+
+## v2.1.2
+
+### Fixes & improvements:
+- Copy over theme docs main pages
