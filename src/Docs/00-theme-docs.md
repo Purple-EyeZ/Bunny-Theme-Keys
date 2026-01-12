@@ -1,4 +1,4 @@
-# 📕 Theme Docs
+# 🎨 Theme Docs
 
 💡 Welcome to the documentation for Vendetta's themes! Here, you'll find information on how to use our raw colors and semantic colors to create beautiful and consistent designs across your application. Whether you're looking for a dark or light theme, we've got you covered. Cheers to a stylish and cohesive design!
 
@@ -7,6 +7,11 @@ Discord may change things within the app so if you'd like to track changes to co
 - For a list of known strings and what they do, visit [here](/).
 - For a full list of strings visit [Themelings](https://github.com/nexpid/Themelings/tree/data){target="_blank" rel="noopener"}.
 - For theme templates visit [here](/Templates/).
+- [Theme List](https://plugins-list.pages.dev/Themes/){target="_blank" rel="noopener"}.
+
+::: tip
+You can take an existing up to date theme and use that as a theme template
+:::
 
 ## 🤖 Theme Format
 
@@ -37,9 +42,7 @@ Discord may change things within the app so if you'd like to track changes to co
 }
 ```
 
-### Semantic Colors and Raw Colors:
-
-Values for `semanticColors` and `rawColors`:
+### Semantic and Raw color values:
 
 - **Hexadecimal**: `#RGB(A)` or `#RRGGBB(AA)`
 - **rgb() / rgba()**: `rgb(R, G, B)` or `rgba(R, G, B, A)`
