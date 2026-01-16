@@ -174,3 +174,31 @@
 
 ### Fixes & improvements:
 - Copy over theme docs main pages
+
+## v2.1.3
+
+### Keys:
+>#### Semantic colors changes:
+> - `BACKGROUND_SECONDARY`
+> - `BG_BASE_TERTIARY`
+
+>#### RAW colors added:
+> - `PLUM_23`
+
+>#### Semantic colors removed:
+> - `CARD_PRIMARY_BG`
+> - `HEADER_PRIMARY`
+> - `HEADER_SECONDARY`
+> - `TEXT_DANGER`
+> - `TEXT_NORMAL`
+> - `TEXT_SECONDARY`
+> - `BORDER_FAINT`
+
+>#### Semantic colors added:
+> - `CARD_BACKGROUND_DEFAULT`
+> - `BACKGROUND_SURFACE_HIGH`
+> - `TEXT_STRONG`
+> - `TEXT_SUBTLE`
+> - `TEXT_FEEDBACK_CRITICAL`
+> - `TEXT_DEFAULT`
+> - `BORDER_MUTED`

@@ -49,14 +49,12 @@
 			"title": "BACKGROUND_SECONDARY",
 			"images": [
 				"images/Semantic-colors/id_11.0.webp",
-				"images/Semantic-colors/id_11.1.webp",
-				"images/Semantic-colors/id_11.2.webp",
 				"images/Semantic-colors/id_11.3.webp",
 				"images/Semantic-colors/id_11.4.webp",
 				"images/Semantic-colors/id_11.5.webp",
 				"images/Semantic-colors/id_11.6.webp"
 			],
-			"description": "User profile background / Message button / Reply bar / Server selector background in emoji picker / Settings background / Folders background / 2 buttons under server list (Join server & Find group)."
+			"description": "User profile background / Message button / Server selector background in emoji picker / Settings background / 2 buttons under server list (Join server & Find group)."
 		},
 		{
 			"id": 12,
@@ -108,12 +106,12 @@
 		},
 		{
 			"id": 18,
-			"title": "CARD_PRIMARY_BG",
+			"title": "CARD_BACKGROUND_DEFAULT",
 			"images": [
 				"images/Semantic-colors/id-18.webp",
 				"images/Semantic-colors/id-18.1.webp"
 			],
-			"description": "Primary card background (Contextual menu, settings)."
+			"description": "Inner card backgrounds."
 		},
 		{
 			"id": 19,
@@ -122,14 +120,26 @@
 			"description": "Icons of already read channels."
 		},
 		{
+			"id": 20,
+			"title": "BACKGROUND_SURFACE_HIGH",
+			"images": [
+				"images/Semantic-colors/id_11.1.webp",
+				"images/Semantic-colors/id_11.2.webp"
+			],
+			"description": "Reply bar / Folder head background / @user sheet background"
+		},
+		{
 			"id": 21,
-			"title": "HEADER_PRIMARY",
-			"images": ["images/Semantic-colors/id-21.webp"],
-			"description": "Header text, texts in settings."
+			"title": "TEXT_STRONG",
+			"images": [
+				"images/Semantic-colors/id-21.webp",
+				"images/Semantic-colors/id-41.webp"
+			],
+			"description": "Header text, texts in settings and chat."
 		},
 		{
 			"id": 22,
-			"title": "HEADER_SECONDARY",
+			"title": "TEXT_SUBTLE",
 			"images": ["images/Semantic-colors/id-22.webp"],
 			"description": "Secondary texts in settings."
 		},
@@ -185,7 +195,7 @@
 		},
 		{
 			"id": 37,
-			"title": "TEXT_DANGER",
+			"title": "TEXT_FEEDBACK_CRITICAL",
 			"images": ["images/Semantic-colors/id-37.webp"],
 			"description": "Delete button text and icon."
 		},
@@ -200,7 +210,7 @@
 		},
 		{
 			"id": 40,
-			"title": "TEXT_NORMAL",
+			"title": "TEXT_DEFAULT",
 			"images": [
 				"images/Semantic-colors/id-40.webp",
 				"images/Semantic-colors/id-40.1.webp"
@@ -215,7 +225,7 @@
 		},
 		{
 			"id": 42,
-			"title": "TEXT_SECONDARY",
+			"title": "TEXT_SUBTLE",
 			"images": ["images/Semantic-colors/id-42.webp"],
 			"description": "Secondary / minor text."
 		},
@@ -247,11 +257,9 @@
 			"id": 62,
 			"title": "BG_BASE_TERTIARY",
 			"images": [
-				"images/Semantic-colors/id_62.0.webp",
-				"images/Semantic-colors/id_62.1.webp",
 				"images/Semantic-colors/id_62.2.webp"
 			],
-			"description": "Background / Forum channel buttons."
+			"description": "Forum channel buttons."
 		},
 		{
 			"id": 63,
@@ -292,7 +300,7 @@
 		},
 		{
 			"id": 100,
-			"title": "BORDER_FAINT",
+			"title": "BORDER_MUTED",
 			"images": [
 				"images/Semantic-colors/id_100.0.webp",
 				"images/Semantic-colors/id_100.1.webp",
@@ -693,6 +701,15 @@
 				"images/RAW-colors/id_98.3.webp"
 			],
 			"description": "Channel selected, context menu button, line, chat input background (Transparent) + Forwarded texts."
+		},
+		{
+			"id": 104,
+			"title": "PLUM_23",
+			"images": [
+				"images/Semantic-colors/id_62.0.webp",
+				"images/Semantic-colors/id_62.1.webp"
+			],
+			"description": "Background for server list, "
 		},
 		{
 			"id": 102,
