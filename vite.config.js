@@ -4,6 +4,7 @@ import htmlMinifier from "vite-plugin-html-minifier";
 import { viteStaticCopy } from "vite-plugin-static-copy";
 
 export default defineConfig({
+	base: "./",
 	root: "src",
 	build: {
 		outDir: "../dist",
@@ -11,6 +12,7 @@ export default defineConfig({
 		rollupOptions: {
 			input: {
 				main: resolve(__dirname, "src/index.html"),
+				docs: resolve(__dirname, "src/Docs/index.html"),
 				validator: resolve(__dirname, "src/Validator/index.html"),
 				templates: resolve(__dirname, "src/Templates/index.html"),
 				about: resolve(__dirname, "src/About/index.html"),
@@ -45,8 +47,8 @@ export default defineConfig({
 					},
 				},
 				{
-					src: "Docs/assets",
-					dest: "Docs/",
+					src: ["Docs/*.md", "Docs/assets"],
+					dest: "Docs",
 				},
 			],
 		}),
