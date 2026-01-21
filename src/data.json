@@ -2,9 +2,11 @@
 	"semanticColors": [
 		{
 			"id": 1,
-			"title": "ANDROID_RIPPLE",
-			"images": ["images/Semantic-colors/id-1.gif"],
-			"description": "Button hover background."
+			"title": "MOBILE_ANDROID_BUTTON_BACKGROUND_RIPPLE",
+			"images": [
+				"images/Semantic-colors/id-1.gif"
+			],
+			"description": "Button/messages hover background."
 		},
 		{
 			"id": 2,
@@ -17,17 +19,8 @@
 			"description": "Server activity icon, reply line, and thread icon background."
 		},
 		{
-			"id": 6,
-			"title": "BACKGROUND_MODIFIER_ACCENT",
-			"images": [
-				"images/Semantic-colors/id-6.webp",
-				"images/Semantic-colors/id-6.1.webp"
-			],
-			"description": "Channel selected, background folder open, bars at top and bottom of chat."
-		},
-		{
 			"id": 7,
-			"title": "BACKGROUND_MODIFIER_ACTIVE",
+			"title": "INTERACTIVE_BACKGROUND_ACTIVE",
 			"images": [
 				"images/Semantic-colors/id-7.webp",
 				"images/Semantic-colors/id_7.1.webp"
@@ -36,7 +29,7 @@
 		},
 		{
 			"id": 10,
-			"title": "BACKGROUND_PRIMARY",
+			"title": "BACKGROUND_BASE_LOW",
 			"images": [
 				"images/Semantic-colors/id-10.webp",
 				"images/Semantic-colors/id-10.1.webp",
@@ -46,54 +39,32 @@
 		},
 		{
 			"id": 11,
-			"title": "BACKGROUND_SECONDARY",
+			"title": "BACKGROUND_BASE_LOWER",
 			"images": [
 				"images/Semantic-colors/id_11.0.webp",
 				"images/Semantic-colors/id_11.3.webp",
-				"images/Semantic-colors/id_11.4.webp",
-				"images/Semantic-colors/id_11.5.webp",
-				"images/Semantic-colors/id_11.6.webp"
+				"images/Semantic-colors/id_11.4.webp"
 			],
-			"description": "User profile background / Message button / Server selector background in emoji picker / Settings background / 2 buttons under server list (Join server & Find group)."
+			"description": "User profile background / Settings background / Members list background."
 		},
 		{
 			"id": 12,
-			"title": "BACKGROUND_SECONDARY_ALT",
+			"title": "BACKGROUND_BASE_LOWEST",
 			"images": [
 				"images/Semantic-colors/id-12.webp",
 				"images/Semantic-colors/id_12.1.webp",
-				"images/Semantic-colors/id_12.2.webp",
-				"images/Semantic-colors/id_12.3.webp",
-				"images/Semantic-colors/id_12.4.webp"
+				"images/Semantic-colors/id_12.4.webp",
+				"images/Semantic-colors/id-13.webp"
 			],
-			"description": "Background for tags in forum posts, code block borders, and forum channel buttons. (Check BG_BASE_TERTIARY)"
-		},
-		{
-			"id": 13,
-			"title": "BACKGROUND_TERTIARY",
-			"images": [
-				"images/Semantic-colors/id-13.webp",
-				"images/Semantic-colors/id-13.1.webp"
-			],
-			"description": "Emoji picker line, background search filter."
-		},
-		{
-			"id": 14,
-			"title": "BG_BASE_PRIMARY",
-			"images": ["images/Semantic-colors/id-14.webp"],
-			"description": "Chat background."
+			"description": "Background for tags in forum posts / forum channel buttons / emoji picker line."
 		},
 		{
 			"id": 15,
-			"title": "BG_BACKDROP",
-			"images": ["images/Semantic-colors/id-15.webp"],
+			"title": "BACKGROUND_SCRIM",
+			"images": [
+				"images/Semantic-colors/id-15.webp"
+			],
 			"description": "Background when a contextual menu is open."
-		},
-		{
-			"id": 16,
-			"title": "BG_BASE_SECONDARY",
-			"images": ["images/Semantic-colors/id-16.webp"],
-			"description": "Application settings background."
 		},
 		{
 			"id": 17,
@@ -116,7 +87,9 @@
 		{
 			"id": 19,
 			"title": "CHANNEL_ICON",
-			"images": ["images/Semantic-colors/id-19.webp"],
+			"images": [
+				"images/Semantic-colors/id-19.webp"
+			],
 			"description": "Icons of already read channels."
 		},
 		{
@@ -124,30 +97,40 @@
 			"title": "BACKGROUND_SURFACE_HIGH",
 			"images": [
 				"images/Semantic-colors/id_11.1.webp",
-				"images/Semantic-colors/id_11.2.webp"
+				"images/Semantic-colors/id_11.2.webp",
+				"images/Semantic-colors/id_20.0.webp",
+				"images/Semantic-colors/id_20.1.webp",
+				"images/Semantic-colors/id_20.2.webp",
+				"images/Semantic-colors/id_20.3.webp"
 			],
-			"description": "Reply bar / Folder head background / @user sheet background"
+			"description": "Reply bar / Folder head background / @user sheet background / reactions background / code block background / chat files background / servers list background in emoji picker / search filter background."
 		},
 		{
 			"id": 21,
 			"title": "TEXT_STRONG",
 			"images": [
-				"images/Semantic-colors/id-21.webp",
-				"images/Semantic-colors/id-41.webp"
+				"images/Semantic-colors/id-41.webp",
+				"images/Semantic-colors/id-21.1.webp"
 			],
-			"description": "Header text, texts in settings and chat."
+			"description": "Texts in chat, context server menu."
 		},
 		{
 			"id": 22,
 			"title": "TEXT_SUBTLE",
-			"images": ["images/Semantic-colors/id-22.webp"],
-			"description": "Secondary texts in settings."
+			"images": [
+				"images/Semantic-colors/id_22.webp",
+				"images/Semantic-colors/id_22.1.webp"
+			],
+			"description": "Channel category names / status in members list."
 		},
 		{
 			"id": 23,
-			"title": "INTERACTIVE_ACTIVE",
-			"images": ["images/Semantic-colors/id-23.webp"],
-			"description": "Unread channel icons, unread server, selected tab."
+			"title": "INTERACTIVE_TEXT_ACTIVE",
+			"images": [
+				"images/Semantic-colors/id-23.webp",
+				"images/Semantic-colors/id_23.webp"
+			],
+			"description": "Unread channel icons, unread server, selected tab, default username color, segmented control text."
 		},
 		{
 			"id": 25,
@@ -162,41 +145,55 @@
 		},
 		{
 			"id": 26,
-			"title": "INTERACTIVE_NORMAL",
+			"title": "INTERACTIVE_TEXT_DEFAULT",
 			"images": [
 				"images/Semantic-colors/id-26.webp",
-				"images/Semantic-colors/id-26.1.webp"
+				"images/Semantic-colors/id-26.1.webp",
+				"images/Semantic-colors/id_26.webp",
+				"images/Semantic-colors/id_26.1.webp",
+				"images/Semantic-colors/id_26.2.webp",
+				"images/Semantic-colors/id_26.3.webp",
+				"images/Semantic-colors/id_26.4.webp",
+				"images/Semantic-colors/id_26.5.webp",
+				"images/Semantic-colors/id_26.6.webp",
+				"images/Semantic-colors/id_26.7.webp",
+				"images/Semantic-colors/id_26.8.webp",
+				"images/Semantic-colors/id_26.9.webp",
+				"images/Semantic-colors/id_26.10.webp",
+				"images/Semantic-colors/id_26.11.webp"
 			],
-			"description": "Unselected tabs / back arrow, search icon, emoji button in chat / 'is typing' text."
+			"description": "Unselected tabs, back arrow, emoji button in chat, 'is typing' text, reply text, Action sheet/settings icons, uneselected checkboxes/radio buttons, forum channel buttons text, reactions count, messages button."
 		},
 		{
 			"id": 29,
 			"title": "REDESIGN_BUTTON_SECONDARY_BACKGROUND",
-			"images": ["images/Semantic-colors/id-29.webp"],
+			"images": [
+				"images/Semantic-colors/id-29.webp"
+			],
 			"description": "Background buttons secondary."
 		},
 		{
 			"id": 30,
 			"title": "REDESIGN_BUTTON_SECONDARY_BORDER",
-			"images": ["images/Semantic-colors/id-30.webp"],
+			"images": [
+				"images/Semantic-colors/id-30.webp"
+			],
 			"description": "Border buttons secondary."
-		},
-		{
-			"id": 31,
-			"title": "REDESIGN_CHANNEL_CATEGORY_NAME_TEXT",
-			"images": ["images/Semantic-colors/id-31.webp"],
-			"description": "[OUTDATED] Channel category name."
 		},
 		{
 			"id": 32,
 			"title": "REDESIGN_CHANNEL_NAME_TEXT",
-			"images": ["images/Semantic-colors/id-32.webp"],
+			"images": [
+				"images/Semantic-colors/id-32.webp"
+			],
 			"description": "Unread channel text."
 		},
 		{
 			"id": 37,
 			"title": "TEXT_FEEDBACK_CRITICAL",
-			"images": ["images/Semantic-colors/id-37.webp"],
+			"images": [
+				"images/Semantic-colors/id-37.webp"
+			],
 			"description": "Delete button text and icon."
 		},
 		{
@@ -213,58 +210,53 @@
 			"title": "TEXT_DEFAULT",
 			"images": [
 				"images/Semantic-colors/id-40.webp",
-				"images/Semantic-colors/id-40.1.webp"
+				"images/Semantic-colors/id-40.1.webp",
+				"images/Semantic-colors/id_40.webp",
+				"images/Semantic-colors/id_40.1.webp",
+				"images/Semantic-colors/id_40.2.webp",
+				"images/Semantic-colors/id_40.3.webp",
+				"images/Semantic-colors/id_40.4.webp"
 			],
-			"description": "Text in user profile."
-		},
-		{
-			"id": 41,
-			"title": "TEXT_PRIMARY",
-			"images": ["images/Semantic-colors/id-41.webp"],
-			"description": "Chat text."
-		},
-		{
-			"id": 42,
-			"title": "TEXT_SUBTLE",
-			"images": ["images/Semantic-colors/id-42.webp"],
-			"description": "Secondary / minor text."
+			"description": "Text in user profile, inline code text, guild tags text, polls answer text, settings categories, search icon, alert modal, some texts on forum posts."
 		},
 		{
 			"id": 44,
 			"title": "REDESIGN_CHAT_INPUT_BACKGROUND",
-			"images": ["images/Semantic-colors/id-44.webp"],
+			"images": [
+				"images/Semantic-colors/id-44.webp"
+			],
 			"description": "Chat input background."
 		},
 		{
 			"id": 49,
 			"title": "EMBED_BACKGROUND",
-			"images": ["images/Semantic-colors/id-48-49.webp"],
+			"images": [
+				"images/Semantic-colors/id-48-49.webp"
+			],
 			"description": "Embed background."
 		},
 		{
 			"id": 56,
 			"title": "REDESIGN_INPUT_CONTROL_SELECTED",
-			"images": ["images/Semantic-colors/id-56.webp"],
+			"images": [
+				"images/Semantic-colors/id-56.webp"
+			],
 			"description": "Color of switch buttons."
 		},
 		{
 			"id": 61,
-			"title": "EXPRESSION_PICKER_BG",
-			"images": ["images/Semantic-colors/id-61.webp"],
-			"description": "Emoji picker background."
-		},
-		{
-			"id": 62,
-			"title": "BG_BASE_TERTIARY",
+			"title": "MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT",
 			"images": [
-				"images/Semantic-colors/id_62.2.webp"
+				"images/Semantic-colors/id-61.webp"
 			],
-			"description": "Forum channel buttons."
+			"description": "Emoji picker background."
 		},
 		{
 			"id": 63,
 			"title": "PANEL_BG",
-			"images": ["images/Semantic-colors/id-63.webp"],
+			"images": [
+				"images/Semantic-colors/id-63.webp"
+			],
 			"description": "Channel list background."
 		},
 		{
@@ -275,9 +267,14 @@
 		},
 		{
 			"id": 97,
-			"title": "BG_BRAND",
-			"images": [],
-			"description": "See BRAND_500 Screenshots (Send button + 'dot' on the home button)."
+			"title": "BACKGROUND_BRAND",
+			"images": [
+				"images/Semantic-colors/id_97.0.webp",
+				"images/Semantic-colors/id_97.1.webp",
+				"images/Semantic-colors/id_97.2.webp",
+				"images/Semantic-colors/id_97.3.webp"
+			],
+			"description": "Send button, bots tag, new messages banner, 'dot' on the home button, and some other things with blurple color."
 		},
 		{
 			"id": 98,
@@ -296,7 +293,7 @@
 				"images/Semantic-colors/id_99.1.webp",
 				"images/Semantic-colors/id_99.2.webp"
 			],
-			"description": "Backdrop / Navigation bar / Context menu."
+			"description": "[OUTDATED] Backdrop / Navigation bar / Context menu."
 		},
 		{
 			"id": 100,
@@ -317,9 +314,12 @@
 				"images/Semantic-colors/id_101.1.webp",
 				"images/Semantic-colors/id_101.2.webp",
 				"images/Semantic-colors/id_101.3.webp",
-				"images/Semantic-colors/id_101.4.webp"
+				"images/Semantic-colors/id_101.4.webp",
+				"images/Semantic-colors/id_120.0.webp",
+				"images/Semantic-colors/id_101.5.webp",
+				"images/Semantic-colors/id_101.6.webp"
 			],
-			"description": "More borders."
+			"description": "More borders / Divider / Timecode background / Polls border."
 		},
 		{
 			"id": 102,
@@ -333,18 +333,22 @@
 		{
 			"id": 103,
 			"title": "BG_SURFACE_RAISED",
-			"images": ["images/Semantic-colors/id_103.webp"],
+			"images": [
+				"images/Semantic-colors/id_103.webp"
+			],
 			"description": "Cards in profile view and “You” tab / Badge background."
 		},
 		{
 			"id": 110,
 			"title": "THREAD_CHANNEL_SPINE",
-			"images": ["images/Semantic-colors/id_110.0.webp"],
+			"images": [
+				"images/Semantic-colors/id_110.0.webp"
+			],
 			"description": "Line."
 		},
 		{
 			"id": 111,
-			"title": "BG_MOD_FAINT",
+			"title": "BACKGROUND_MOD_MUTED",
 			"images": [
 				"images/Semantic-colors/id_111.0.webp",
 				"images/Semantic-colors/id_111.1.webp"
@@ -353,66 +357,99 @@
 		},
 		{
 			"id": 112,
-			"title": "BG_MOD_STRONG",
+			"title": "BACKGROUND_MOD_STRONG",
 			"images": [
 				"images/Semantic-colors/id_112.0.webp",
-				"images/Semantic-colors/id_112.1.webp"
+				"images/Semantic-colors/id_112.1.webp",
+				"images/Semantic-colors/id_112.2.webp"
 			],
-			"description": "Divider DMs/Servers list."
+			"description": "Divider DMs/Servers list, guild tags background."
 		},
 		{
 			"id": 113,
 			"title": "REDESIGN_BUTTON_TERTIARY_BACKGROUND",
-			"images": ["images/Semantic-colors/id_113.0.webp"],
+			"images": [
+				"images/Semantic-colors/id_113.0.webp"
+			],
 			"description": "Chat buttons background."
 		},
 		{
 			"id": 114,
-			"title": "INPUT_BACKGROUND",
-			"images": ["images/Semantic-colors/id_114.0.webp"],
+			"title": "INPUT_BACKGROUND_DEFAULT",
+			"images": [
+				"images/Semantic-colors/id_114.0.webp"
+			],
 			"description": "Search bars, all text input areas (except chat input), + emoji/GIFs/Stickers background."
 		},
 		{
 			"id": 115,
 			"title": "REDESIGN_INPUT_CONTROL_ACTIVE_BG",
-			"images": ["images/Semantic-colors/id_115.0.webp"],
+			"images": [
+				"images/Semantic-colors/id_115.0.webp"
+			],
 			"description": "Emoji picker button."
 		},
 		{
 			"id": 116,
 			"title": "BUTTON_OUTLINE_DANGER_BORDER",
-			"images": ["images/Semantic-colors/id_116.0.webp"],
-			"description": "Background for red notification badges."
+			"images": [
+				"images/Semantic-colors/id_116.0.webp"
+			],
+			"description": "[OUTDATED] Background for red notification badges."
 		},
 		{
 			"id": 117,
-			"title": "STATUS_DND",
-			"images": ["images/Semantic-colors/id_117.0.webp"],
+			"title": "TEXT_STATUS_DND",
+			"images": [
+				"images/Semantic-colors/id_117.0.webp"
+			],
 			"description": "Do not disturb."
 		},
 		{
 			"id": 118,
 			"title": "TEXT_LINK",
-			"images": ["images/Semantic-colors/id_118.0.webp"],
+			"images": [
+				"images/Semantic-colors/id_118.0.webp"
+			],
 			"description": "Links color."
 		},
 		{
 			"id": 119,
 			"title": "TEXT_LOW_CONTRAST",
-			"images": ["images/Semantic-colors/id_119.0.webp"],
-			"description": "Forwarded texts."
-		},
-		{
-			"id": 120,
-			"title": "DIVIDER_SUBTLE",
-			"images": ["images/Semantic-colors/id_120.0.webp"],
-			"description": "Divider menus."
+			"images": [
+				"images/Semantic-colors/id_119.0.webp"
+			],
+			"description": "[OUTDATED] Forwarded texts."
 		},
 		{
 			"id": 121,
 			"title": "REDESIGN_BUTTON_PRIMARY_PRESSED_BACKGROUND",
-			"images": ["images/Semantic-colors/id_121.0.gif"],
+			"images": [
+				"images/Semantic-colors/id_121.0.gif"
+			],
 			"description": "Primary buttons pressed (basically all blurple buttons)."
+		},
+		{
+			"id": 122,
+			"title": "MOBILE_TEXT_HEADING_PRIMARY",
+			"images": [
+				"images/Semantic-colors/id-21.webp",
+				"images/Semantic-colors/id_122.webp",
+				"images/Semantic-colors/id_122.1.webp",
+				"images/Semantic-colors/id_122.2.webp"
+			],
+			"description": "Header texts, action sheet buttons text."
+		},
+		{
+			"id": 123,
+			"title": "INTERACTIVE_ICON_DEFAULT",
+			"images": [
+				"images/Semantic-colors/id_123.webp",
+				"images/Semantic-colors/id_123.1.webp",
+				"images/Semantic-colors/id_123.2.webp",
+				"images/Semantic-colors/id_123.3.webp"
+			],
+			"description": "Emoji picker icons / Search icon."
 		}
 	],
 	"rawColors": [
@@ -429,13 +466,17 @@
 		{
 			"id": 4,
 			"title": "BRAND_260",
-			"images": ["images/RAW-colors/id_4.webp"],
+			"images": [
+				"images/RAW-colors/id_4.webp"
+			],
 			"description": "'OP' badge background in forum posts."
 		},
 		{
 			"id": 5,
 			"title": "BRAND_360",
-			"images": ["images/RAW-colors/id5.webp"],
+			"images": [
+				"images/RAW-colors/id5.webp"
+			],
 			"description": "Reply background / reply mention toggle."
 		},
 		{
@@ -521,7 +562,9 @@
 		{
 			"id": "PL14",
 			"title": "PLUM_14",
-			"images": ["images/RAW-colors/id_PL14.0.webp"],
+			"images": [
+				"images/RAW-colors/id_PL14.0.webp"
+			],
 			"description": "Spoiler hidden background."
 		},
 		{
@@ -539,7 +582,9 @@
 		{
 			"id": 10,
 			"title": "PLUM_16",
-			"images": ["images/RAW-colors/id_10.webp"],
+			"images": [
+				"images/RAW-colors/id_10.webp"
+			],
 			"description": " Button 'Emoji/GIFs/Stickers' / line emoji picker."
 		},
 		{
@@ -615,13 +660,17 @@
 		{
 			"id": "PR230",
 			"title": "PRIMARY_230",
-			"images": ["images/RAW-colors/id_PR230.webp"],
+			"images": [
+				"images/RAW-colors/id_PR230.webp"
+			],
 			"description": "Text for secondary + tertiary buttons."
 		},
 		{
 			"id": 17,
 			"title": "PRIMARY_300",
-			"images": ["images/RAW-colors/id_17.webp"],
+			"images": [
+				"images/RAW-colors/id_17.webp"
+			],
 			"description": "Icon emoji in the context menu, and maybe other things?."
 		},
 		{
@@ -637,13 +686,17 @@
 		{
 			"id": 21,
 			"title": "PRIMARY_500",
-			"images": ["images/RAW-colors/id_21.webp"],
+			"images": [
+				"images/RAW-colors/id_21.webp"
+			],
 			"description": "Joined button text on invite embed."
 		},
 		{
 			"id": 26,
 			"title": "PRIMARY_660",
-			"images": ["images/RAW-colors/id_26.0.webp"],
+			"images": [
+				"images/RAW-colors/id_26.0.webp"
+			],
 			"description": "Background for bots list in commands."
 		},
 		{
@@ -667,7 +720,9 @@
 		{
 			"id": 46,
 			"title": "PLUM_22",
-			"images": ["images/RAW-colors/id-46.webp"],
+			"images": [
+				"images/RAW-colors/id-46.webp"
+			],
 			"description": "Swipe to reply background."
 		},
 		{
@@ -723,13 +778,17 @@
 		{
 			"id": "BL345",
 			"title": "BLUE_345",
-			"images": ["images/RAW-colors/id_BL345.0.webp"],
+			"images": [
+				"images/RAW-colors/id_BL345.0.webp"
+			],
 			"description": "Links color."
 		},
 		{
 			"id": "GR430",
 			"title": "GREEN_430",
-			"images": ["images/RAW-colors/id_GR430.0.webp"],
+			"images": [
+				"images/RAW-colors/id_GR430.0.webp"
+			],
 			"description": "Green buttons background."
 		},
 		{
@@ -741,7 +800,9 @@
 		{
 			"id": "RE430",
 			"title": "RED_430",
-			"images": ["images/RAW-colors/id_RE430.0.webp"],
+			"images": [
+				"images/RAW-colors/id_RE430.0.webp"
+			],
 			"description": "Red buttons background."
 		},
 		{
