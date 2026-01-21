@@ -430,3 +430,7 @@ if (typeof module !== 'undefined' && require.main === module) {
   exports.main(typeof process !== 'undefined' ? process.argv.slice(1) : require("system").args);
 }
 }
+
+if (typeof globalThis !== 'undefined') globalThis.jsonlint = jsonlint;
+export default jsonlint;
+export const parse = jsonlint.parse;

@@ -1,0 +1,11 @@
+{
+	"files": {
+		"includes": [
+			"**",
+			"!!**/dist",
+			"!src/jsonlint/*",
+			"!src/scripts/fluid.js",
+			"!src/Templates/*.json"
+		]
+	}
+}
