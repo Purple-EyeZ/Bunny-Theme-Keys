@@ -45,10 +45,29 @@ function initSidebar() {
 	};
 
 	if (els.docsSubmenu && docPages.length) {
+		// For Github Pages compatibility.............
+		const path = window.location.pathname;
+		let prefix = "./";
+
+		if (
+			path.includes("/Docs/") ||
+			path.includes("/Validator/") ||
+			path.includes("/Templates/") ||
+			path.includes("/About/")
+		) {
+			if (path.includes("/Docs/")) {
+				prefix = "./";
+			} else {
+				prefix = "../Docs/";
+			}
+		} else {
+			prefix = "./Docs/";
+		}
+
 		els.docsSubmenu.innerHTML = docPages
 			.map(
 				(p) =>
-					`<li><a href="/Docs/?page=${p.name}" data-doc-link="${p.name}">${p.title}</a></li>`,
+					`<li><a href="${prefix}?page=${p.name}" data-doc-link="${p.name}">${p.title}</a></li>`,
 			)
 			.join("");
 	}
