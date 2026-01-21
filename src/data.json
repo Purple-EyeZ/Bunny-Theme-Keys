@@ -450,6 +450,14 @@
 				"images/Semantic-colors/id_123.3.webp"
 			],
 			"description": "Emoji picker icons / Search icon."
+		},
+		{
+			"id": 124,
+			"title": "MESSAGE_MENTIONED_BACKGROUND_DEFAULT",
+			"images": [
+				"images/Semantic-colors/id_124.webp"
+			],
+			"description": "Mentioned message background."
 		}
 	],
 	"rawColors": [
